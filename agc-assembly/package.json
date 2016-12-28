@@ -1,0 +1,26 @@
+{
+    "name": "agc-assembly",
+    "displayName": "AGC Assembly",
+    "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
+    "version": "0.0.1",
+    "publisher": "wopian",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "agc",
+            "aliases": ["AGC Assembly", "agc"],
+            "extensions": [".agc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "agc",
+            "scopeName": "source.agc",
+            "path": "./syntaxes/agc_assembly.tmLanguage"
+        }]
+    }
+}
