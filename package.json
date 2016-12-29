@@ -41,7 +41,7 @@
         "color": "#0B3D91",
         "theme": "dark"
     },
-    "icon": "icon.png",
+    "icon": "images/icon.png",
     "contributes": {
         "languages": [
             {
@@ -119,6 +119,6 @@
     },
     "scripts": {
         "start": "node build.js",
-        "vscode:prepublish": "node build.js"
+        "vscode:prepublish": "node src/build.js"
     }
 }
