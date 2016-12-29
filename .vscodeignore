@@ -1,8 +1,11 @@
 .vscode
 node_modules
 samples
+tests
 **/*.yaml
+src/build.js
+.eslintrc.json
 .gitattributes
 .gitignore
 **/*.vsix
-build.js
+jsconfig.json
