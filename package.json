@@ -1,97 +1,124 @@
 {
-  "name": "agc-assembly",
-  "displayName": "AGC Assembly",
-  "version": "0.0.1",
-  "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
-  "engines": {
-    "vscode": "^1.5.0",
-    "node": "^7.2.1",
-    "npm": "^4.0.3"
-  },
-  "publisher": "wopian",
-  "license": "Apache-2.0",
-  "categories": ["Languages"],
-  "keywords": ["Apollo Guidance Computer", "Assembly"],
-  "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wopian/agc-assembly"
-  },
-  "bugs": {
-    "url": "https://github.com/wopian/agc-assembly/issues"
-  },
-  "galleryBanner": {
-    "color": "#0B3D91",
-    "theme": "dark"
-  },
-  "icon": "icon.png",
-  "contributes": {
-    "languages": [
-      {
-        "id": "agc",
-        "aliases": ["AGC Assembly", "agc"],
-        "extensions": [".agc"],
-        "configuration": "./language-configuration.json"
-      },
-      {
-        "id": "ags",
-        "aliases": ["AGS Assembly", "ags"],
-        "extensions": [".aea", ".ags"],
-        "configuration": "./language-configuration.json"
-      },
-      {
-        "id": "argus",
-        "aliases": ["ARGUS H800 Assembly Language", "argus"],
-        "extensions": [".argus", ".mitigus"],
-        "configuration": "./language-configuration.json"
-      },
-      {
-        "id": "binsource",
-        "aliases": ["AGC Binsource", "binsource"],
-        "extensions": [".binsource"],
-        "configuration": "./language-configuration.json"
-      }
+    "name": "agc-assembly",
+    "displayName": "AGC Assembly",
+    "version": "0.0.2",
+    "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
+    "engines": {
+        "vscode": "^1.5.0",
+        "node": "^7.2.1",
+        "npm": "^4.0.3"
+    },
+    "publisher": "wopian",
+    "license": "Apache-2.0",
+    "categories": [
+        "Languages"
     ],
-    "grammars": [
-      {
-        "language": "agc",
-        "scopeName": "source.agc_assembly",
-        "path": "./syntaxes/agc.tmLanguage"
-      },
-      {
-        "language": "ags",
-        "scopeName": "source.ags_assembly",
-        "path": "./syntaxes/argus.tmLanguage"
-      },
-      {
-        "language": "argus",
-        "scopeName": "source.mitigus",
-        "path": "./syntaxes/agc.tmLanguage"
-      },
-      {
-        "language": "binsource",
-        "scopeName": "text.binsource",
-        "path": "./syntaxes/binsource.tmLanguage"
-      }
-    ]
-  },
-  "badges": [
-    {
-			"url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.0.1.svg?style=flat-square",
-			"href": "https://david-dm.org/wopian/agc-assembly?type=dev",
-			"description": "GitHub Commits"
-		},
-		{
-			"url": "https://david-dm.org/wopian/agc-assembly/dev-status.svg?style=flat-square",
-			"href": "https://david-dm.org/wopian/agc-assembly?type=dev",
-			"description": "devDependency Status"
-		}
-	],
-  "devDependencies": {
-    "converter": "0.0.5"
-  },
-  "scripts": {
-    "start": "node build.js",
-    "vscode:prepublish": "node build.js"
-  }
+    "keywords": [
+        "Apollo Guidance Computer",
+        "Assembly"
+    ],
+    "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wopian/agc-assembly"
+    },
+    "bugs": {
+        "url": "https://github.com/wopian/agc-assembly/issues"
+    },
+    "galleryBanner": {
+        "color": "#0B3D91",
+        "theme": "dark"
+    },
+    "icon": "icon.png",
+    "contributes": {
+        "languages": [
+            {
+                "id": "agc",
+                "aliases": [
+                    "AGC Assembly",
+                    "agc"
+                ],
+                "extensions": [
+                    ".agc"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "ags",
+                "aliases": [
+                    "AGS Assembly",
+                    "ags"
+                ],
+                "extensions": [
+                    ".aea",
+                    ".ags"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "argus",
+                "aliases": [
+                    "ARGUS H800 Assembly Language",
+                    "argus"
+                ],
+                "extensions": [
+                    ".argus",
+                    ".mitigus"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "binsource",
+                "aliases": [
+                    "AGC Binsource",
+                    "binsource"
+                ],
+                "extensions": [
+                    ".binsource"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "agc",
+                "scopeName": "source.agc_assembly",
+                "path": "./syntaxes/agc.tmLanguage"
+            },
+            {
+                "language": "ags",
+                "scopeName": "source.ags_assembly",
+                "path": "./syntaxes/argus.tmLanguage"
+            },
+            {
+                "language": "argus",
+                "scopeName": "source.mitigus",
+                "path": "./syntaxes/agc.tmLanguage"
+            },
+            {
+                "language": "binsource",
+                "scopeName": "text.binsource",
+                "path": "./syntaxes/binsource.tmLanguage"
+            }
+        ]
+    },
+    "badges": [
+        {
+            "url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.0.1.svg?style=flat-square",
+            "href": "https://david-dm.org/wopian/agc-assembly?type=dev",
+            "description": "GitHub Commits"
+        },
+        {
+            "url": "https://david-dm.org/wopian/agc-assembly/dev-status.svg?style=flat-square",
+            "href": "https://david-dm.org/wopian/agc-assembly?type=dev",
+            "description": "devDependency Status"
+        }
+    ],
+    "devDependencies": {
+        "converter": "0.0.5"
+    },
+    "scripts": {
+        "start": "node build.js",
+        "vscode:prepublish": "node build.js"
+    }
 }
