@@ -6,7 +6,7 @@ const fs = require('fs'),
     },
     language = (language, index, array) => {
         console.log(`Building ${language[1]} (${index+1}/${array.length})`);
-        const from = fs.createReadStream(`./syntaxes/${language[0]}.yaml-tmLanguage`),
+        const from = fs.createReadStream(`./src/${language[0]}.yaml`),
             to = fs.createWriteStream(`./syntaxes/${language[0]}.tmLanguage`),
             via = converter(options);
         from.pipe(via).pipe(to);

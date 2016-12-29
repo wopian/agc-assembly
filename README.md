@@ -51,7 +51,7 @@ Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "editor.wordSeparators": " 	",
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": true
 }
 ```
 ### Argus
@@ -64,7 +64,7 @@ Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns
     "editor.tabSize": 8,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": true
 }
 ```
 

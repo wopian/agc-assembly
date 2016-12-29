@@ -41,7 +41,7 @@
                 "extensions": [
                     ".agc"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./src/agc.json"
             },
             {
                 "id": "ags",
@@ -50,10 +50,10 @@
                     "ags"
                 ],
                 "extensions": [
-                    ".aea",
-                    ".ags"
+                    ".ags",
+                    ".aea"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./src/ags.json"
             },
             {
                 "id": "argus",
@@ -65,7 +65,7 @@
                     ".argus",
                     ".mitigus"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./src/argus.json"
             },
             {
                 "id": "binsource",
@@ -76,7 +76,7 @@
                 "extensions": [
                     ".binsource"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./src/binsource.json"
             }
         ],
         "grammars": [

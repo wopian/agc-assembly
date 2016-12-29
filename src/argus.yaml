@@ -7,12 +7,15 @@ patterns:
   - comment: Annotation comments
     name: invalid.deprecated.mitigus
     match: "^#.*"
+
   - comment: Annotation comments
     name: invalid.deprecated.mitigus
     match: "^##.*"
+
   - comment: Log Section cards.
     name: comment.line.number-sign.mitigus
     match: "^L .*"
+
   - comment: Source cards.
     name: constant.numeric.mitigus
     match: "^ [0-9]+ *[*]?"

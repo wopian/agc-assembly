@@ -8,8 +8,8 @@
     <string>source.ags_assembly</string>
     <key>fileTypes</key>
     <array>
-      <string>aea</string>
       <string>ags</string>
+      <string>aea</string>
     </array>
     <key>uuid</key>
     <string>ebcb89b7-fbf9-467d-90ec-7ab247800e0c</string>
@@ -20,7 +20,7 @@
         <string>Comments</string>
         <key>name</key>
         <string>invalid.deprecated.ags_assembly</string>
-        <key>match</key>
+        <key>atch</key>
         <string>##.*</string>
       </dict>
       <dict>

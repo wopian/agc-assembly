@@ -1,12 +1,12 @@
 name: AGS Assembly
 scopeName: source.ags_assembly
-fileTypes: [aea, ags]
+fileTypes: [ags, aea]
 uuid: ebcb89b7-fbf9-467d-90ec-7ab247800e0c
 
 patterns:
   - comment: Comments
     name: invalid.deprecated.ags_assembly
-    match: "##.*"
+    atch: "##.*"
 
   - comment: Comments
     name: comment.line.number-sign.ags_assembly
@@ -31,7 +31,6 @@ patterns:
   - comment: Instructions
     name: keyword.control.ags_assembly
     match: \b(ABS|ADD|ADZ|ALS|AXT|CLA|CLZ|COM|DLY|DVP|INP|LDQ|LLS|LRS|MPR|MPY|MPZ|OUT|STO|STQ|SUB|SUZ|TIX|TMI|TOV|TRA|TSQ)\b
-
   - comment: Registers
     name: variable.language.ags_assembly
     match: \b(A|Q|INDEX)\b
