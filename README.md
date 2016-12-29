@@ -12,7 +12,7 @@ Based on [AGC Assembly][3] for Sublime Text.
 
 ## Installation
 
-### [Marketplace][3]
+### [Marketplace][6]
 
 - Launch VS Code Quick Open (Ctrl+P)
 - Input `ext install agc-assembly`
@@ -37,21 +37,34 @@ Based on [AGC Assembly][3] for Sublime Text.
 - Navigate to VSIX binary
 - Reload VS Code
 
-## Extension Settings
+## Suggested Settings
 
-Included are suggested settings files for the three supported filetypes.
 Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source.
 
-```
+### AGC, AGS & Binsource
+```json
 {
-    "editor.tabSize": 8,
-    "editor.insertSpaces": false,
     "editor.detectIndentation": false,
-    "editor.acceptSuggestionOnEnter": false,
+    "editor.insertSpaces": false,
     "editor.tabCompletion": false,
-    "editor.useTabStops": true,
+    "editor.tabSize": 8,
     "editor.trimAutoWhitespace": true,
-    "files.trimTrailingWhitespace": true
+    "editor.useTabStops": true,
+    "editor.wordSeparators": " 	",
+    "files.trimTrailingWhitespace": true,
+}
+```
+### Argus
+```json
+{
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
+    "editor.tabCompletion": false,
+    "editor.tabSize": 8,
+    "editor.trimAutoWhitespace": true,
+    "editor.useTabStops": true,
+    "files.trimTrailingWhitespace": true,
 }
 ```
 
@@ -77,6 +90,7 @@ $ npm start
 [3]:https://github.com/jimlawton/AGC-Assembly
 [4]:https://nodejs.org/en/
 [5]:https://www.npmjs.com/
+[6]:https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly
 
 ## Release Notes
 

@@ -1,7 +1,7 @@
 {
     "name": "agc-assembly",
     "displayName": "AGC Assembly",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
     "engines": {
         "vscode": "^1.5.0",
