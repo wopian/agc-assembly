@@ -106,10 +106,12 @@ $ npm start
 ### 0.1.1 - 2016-12-29
 #### Added
 - Missing comment definitions
+
 #### Changed
 - Moved language test files to samples
 - Moved images into `./images`
 - Moved build script into `./src`
+
 #### Fixed
 - Argus language tokenizer failure
 
@@ -121,6 +123,7 @@ $ npm start
 #### Added
 - Remainder of documentation
 - Package icon
+
 #### Fixed
 - Typo in settings
 
