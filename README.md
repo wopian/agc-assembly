@@ -44,7 +44,7 @@ Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns
 
 ```
 {
-    "editor.tabSize": 4,
+    "editor.tabSize": 8,
     "editor.insertSpaces": false,
     "editor.detectIndentation": false,
     "editor.acceptSuggestionOnEnter": false,
