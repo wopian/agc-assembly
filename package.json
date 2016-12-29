@@ -11,7 +11,7 @@
   "publisher": "wopian",
   "license": "Apache-2.0",
   "categories": ["Languages"],
-  "keywords": ["AGC", "AGS", "Argus", "Mitigus", "Binsource", "Apollo", "Guidance", "Computer", "Assembly"],
+  "keywords": ["AGC", "AGS", "Argus", "Apollo Guidance Computer", "Assembly"],
   "homepage": "https://github.com/wopian/agc-assembly",
   "repository": {
     "type": "git",
