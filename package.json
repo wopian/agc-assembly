@@ -24,6 +24,7 @@
     "color": "#0B3D91",
     "theme": "dark"
   },
+  "icon": "icon.png",
   "contributes": {
     "languages": [
       {
