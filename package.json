@@ -118,7 +118,6 @@
         "converter": "0.0.5"
     },
     "scripts": {
-        "start": "node build.js",
-        "vscode:prepublish": "node src/build.js"
+        "start": "node ./src/build.js"
     }
 }
