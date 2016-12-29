@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.2] - 2016-12-29
+### Fixed
+- Typo causing AGS and Argus to fail
+
 ## [0.1.1] - 2016-12-29
 ### Added
 - Missing comment definitions
