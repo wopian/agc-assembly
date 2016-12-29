@@ -1,4 +1,10 @@
 # AGC Assembly
+[![GitHub release](https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square)]()
+[![Current Version](http://vsmarketplacebadge.apphb.com/version/wopian.agc-assembly.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
+[![Install Count](http://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
+[![Github All Releases](https://img.shields.io/github/downloads/wopian/agc-assembly/total.svg?style=flat-square)](https://github.com/wopian/agc-assembly/releases)
+[![David](https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square)]()
+
 [Visual Studio Code][0] syntax-highlighting for [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 Based on [AGC Assembly][3] for Sublime Text.
