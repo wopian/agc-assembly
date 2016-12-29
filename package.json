@@ -4,14 +4,15 @@
   "version": "0.0.1",
   "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^1.5.0",
+    "node": "^7.2.1",
+    "npm": "^4.0.3"
   },
   "publisher": "wopian",
   "license": "Apache-2.0",
   "categories": [
     "Languages"
   ],
-  "main": "main.js",
   "homepage": "https://github.com/wopian/agc-assembly",
   "repository": {
     "type": "git",
@@ -32,17 +33,70 @@
           ".agc"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "ags",
+        "aliases": [
+          "AGS Assembly",
+          "ags"
+        ],
+        "extensions": [
+          ".aea",
+          ".ags"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "argus",
+        "aliases": [
+          "ARGUS H800 Assembly Language",
+          "argus"
+        ],
+        "extensions": [
+          ".argus",
+          ".mitigus"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "binsource",
+        "aliases": [
+          "AGC Binsource",
+          "binsource"
+        ],
+        "extensions": [
+          ".binsource"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "agc",
-        "scopeName": "source.tmLanguage",
-        "path": "./syntaxes/agc_assembly.tmLanguage"
+        "scopeName": "source.agc_assembly",
+        "path": "./syntaxes/agc.tmLanguage"
+      },
+      {
+        "language": "ags",
+        "scopeName": "source.ags_assembly",
+        "path": "./syntaxes/argus.tmLanguage"
+      },
+      {
+        "language": "argus",
+        "scopeName": "source.mitigus",
+        "path": "./syntaxes/agc.tmLanguage"
+      },
+      {
+        "language": "binsource",
+        "scopeName": "text.binsource",
+        "path": "./syntaxes/binsource.tmLanguage"
       }
     ]
   },
   "devDependencies": {
     "converter": "0.0.5"
+  },
+  "scripts": {
+    "start": "node build.js"
   }
 }

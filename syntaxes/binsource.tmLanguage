@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>AGC Binsource</string>
+    <key>scopeName</key>
+    <string>text.binsource</string>
+    <key>fileTypes</key>
+    <array>
+      <string>binsource</string>
+    </array>
+    <key>uuid</key>
+    <string>db18f887-e497-45a3-b211-03ae4202934e</string>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>comment</key>
+        <string>Comments</string>
+        <key>name</key>
+        <string>comment.binsource</string>
+        <key>match</key>
+        <string>;.*</string>
+      </dict>
+      <dict>
+        <key>comment</key>
+        <string>Operators</string>
+        <key>name</key>
+        <string>keyword.operator.binsource</string>
+        <key>match</key>
+        <string>=</string>
+      </dict>
+      <dict>
+        <key>comment</key>
+        <string>Keywords</string>
+        <key>name</key>
+        <string>keyword.control.binsource</string>
+        <key>match</key>
+        <string>BANK|NUMWORDS|CHECKWORDS</string>
+      </dict>
+      <dict>
+        <key>comment</key>
+        <string>Data</string>
+        <key>name</key>
+        <string>constant.numeric.binsource</string>
+        <key>match</key>
+        <string>[0-7]+</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

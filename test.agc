@@ -1,0 +1,10 @@
+#			Colossus 2A
+
+# Page 399
+		BANK	15
+		SETLOC	KALCMON1
+		BANK
+
+		EBANK=	BCDU
+
+		COUNT	22/KALC
