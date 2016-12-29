@@ -2,7 +2,7 @@
 
 const assert = require('assert'),
     vscode = require('vscode'),
-    agc = require('../src/agc');
+    agc = require('./src/agc');
 
 suite('Extension Tests', () => {
     test('Something 1', () => {

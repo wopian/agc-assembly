@@ -45,7 +45,7 @@
   "activationEvents": [
     "onLanguage:agc"
   ],
-  "main": "./extension",
+  "main": "./src/extension",
   "contributes": {
     "languages": [
       {
@@ -57,7 +57,7 @@
         "extensions": [
           ".agc"
         ],
-        "configuration": "./src/agc.json"
+        "configuration": "./languages/agc.json"
       },
       {
         "id": "ags",
@@ -69,7 +69,7 @@
           ".ags",
           ".aea"
         ],
-        "configuration": "./src/ags.json"
+        "configuration": "./languages/ags.json"
       },
       {
         "id": "argus",
@@ -81,7 +81,7 @@
           ".argus",
           ".mitigus"
         ],
-        "configuration": "./src/argus.json"
+        "configuration": "./languages/argus.json"
       },
       {
         "id": "binsource",
@@ -92,7 +92,7 @@
         "extensions": [
           ".binsource"
         ],
-        "configuration": "./src/binsource.json"
+        "configuration": "./languages/binsource.json"
       }
     ],
     "grammars": [

@@ -1,0 +1,22 @@
+---
+env:
+  browser: false
+  commonjs: true
+  es6: true
+  node: true
+  mocha: true
+
+parseOptions:
+  ecmaVersion: 7
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+
+rules:
+  no-const-assign: warn
+  no-this-before-super: warn
+  no-undef: warn
+  no-unreachable: warn
+  no-unused-vars: warn
+  constructor-super: warn
+  valid-typeof: warn
