@@ -74,7 +74,7 @@ $ npm i
 - Make your changes in the `.yaml-tmLanguage` files—**DO NOT** modify `.tmLanguage` files
 - Build your changes:
 ```
-$ npm run build
+$ npm start
 ```
 
 [0]:https://code.visualstudio.com/

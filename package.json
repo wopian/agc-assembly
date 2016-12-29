@@ -90,6 +90,7 @@
     "converter": "0.0.5"
   },
   "scripts": {
-    "start": "node build.js"
+    "start": "node build.js",
+    "vscode:prepublish": "node build.js"
   }
 }
