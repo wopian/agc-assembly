@@ -1,11 +1,11 @@
 {
     "name": "agc-assembly",
     "displayName": "AGC Assembly",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
     "badges": [
         {
-            "url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.1.0.svg?style=flat-square",
+            "url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.1.1.svg?style=flat-square",
             "href": "https://david-dm.org/wopian/agc-assembly?type=dev",
             "description": "GitHub Commits"
         },
