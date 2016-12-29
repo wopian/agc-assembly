@@ -100,12 +100,12 @@
             {
                 "language": "ags",
                 "scopeName": "source.ags_assembly",
-                "path": "./syntaxes/argus.tmLanguage"
+                "path": "./syntaxes/ags.tmLanguage"
             },
             {
                 "language": "argus",
                 "scopeName": "source.mitigus",
-                "path": "./syntaxes/agc.tmLanguage"
+                "path": "./syntaxes/argus.tmLanguage"
             },
             {
                 "language": "binsource",
