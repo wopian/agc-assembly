@@ -100,8 +100,6 @@ $ npm start
 
 ## Known Issues
 
-- AGS language fails to tokenise
-
 ## Releases
 ### 0.1.2 - 2016-12-29
 #### Fixed
