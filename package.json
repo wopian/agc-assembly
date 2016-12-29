@@ -11,6 +11,7 @@
   "publisher": "wopian",
   "license": "Apache-2.0",
   "categories": ["Languages"],
+  "keywords": ["AGC", "AGS", "Argus", "Mitigus", "Binsource", "Apollo", "Guidance", "Computer", "Assembly"],
   "homepage": "https://github.com/wopian/agc-assembly",
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "bugs": {
     "url": "https://github.com/wopian/agc-assembly/issues"
+  },
+  "galleryBanner": {
+    "color": "#0B3D91",
+    "theme": "dark"
   },
   "contributes": {
     "languages": [
@@ -69,6 +74,18 @@
       }
     ]
   },
+  "badges": [
+    {
+			"url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.0.1.svg?style=flat-square",
+			"href": "https://david-dm.org/wopian/agc-assembly?type=dev",
+			"description": "GitHub Commits"
+		},
+		{
+			"url": "https://david-dm.org/wopian/agc-assembly/dev-status.svg?style=flat-square",
+			"href": "https://david-dm.org/wopian/agc-assembly?type=dev",
+			"description": "devDependency Status"
+		}
+	],
   "devDependencies": {
     "converter": "0.0.5"
   },
