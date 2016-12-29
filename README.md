@@ -1,6 +1,5 @@
 # AGC Assembly
-[Visual Studio Code][0] syntax-highlighting for
-[Apollo Guidance Computer (AGC)][1] assembly [source code][2].
+[Visual Studio Code][0] syntax-highlighting for [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 Based on [AGC Assembly][3] for Sublime Text.
 
@@ -12,55 +11,50 @@ Based on [AGC Assembly][3] for Sublime Text.
 - `binsource` - AGC core rope memory binary source files
 
 ## Installation
-<!--
-### [Package Control][3]
 
- - Command Palette (OS X: `Cmd-Shift-P`, Linux/Windows: `Ctrl-Shift-P`)
- - Select `Package Control: Install Package`.
- - Select `AGC Assembly`
+### [Marketplace][3]
 
-Package Control will automatically keep `AGC Assembly` up to date.
+- Launch VS Code Quick Open (Ctrl+P)
+- Input `ext install agc-assembly`
+- Reload VS Code
 
-## Suggested Settings
+### Sideloading
+
+#### From Source
+
+- Download the [latest release](https://github.com/wopian/agc-assembly/releases)
+- Extract the zip into:
+    - **Windows** `%HOMEPATH%/.vscode/extensions`
+    - **Mac** `~/.vscode/extensions`
+    - **Linux** `~/.vscode/extensions`
+- Reload VS Code
+
+#### From VSIX
+
+- Download the VSIX binary from the [latest release](https://github.com/wopian/agc-assembly/releases)
+- Launch VS Code Command Palette (F1)
+- Input `install vsix`
+- Navigate to VSIX binary
+- Reload VS Code
+
+## Extension Settings
 
 Included are suggested settings files for the three supported filetypes.
-Current [VirtualAGC][1] project conventions are to use hard tabs every 8
-columns when entering source.
+Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source.
 
 ```
 {
-    "tab_size": 8,
-    "translate_tabs_to_spaces": false,
-    "use_tab_stops": true,
-    "detect_indentation": false,
-    "auto_indent": true,
-    "smart_indent": false,
-    "indent_to_bracket": false,
-    "trim_automatic_white_space": false,
-    "tab_completion": false
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.acceptSuggestionOnEnter": false,
+    "editor.tabCompletion": false,
+    "editor.useTabStops": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true
 }
 ```
 
-You can set the language-specific settings by opening an AGC/AGS source file
-and selecting `Sublime Text` > `Preferences` > `Settings - Syntax-Specific`.
--->
-### Manual Installation
-
-- Download the latest [release](https://github.com/wopian/agc-assembly/releases)
-- Extract the zip into `%HOMEPATH%/.vscode/extensions`
-- Restart Visual Studio Code
-
-## Extension Settings
-<!--
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
--->
 ## Contributing
 
 Pull requests are welcome.
