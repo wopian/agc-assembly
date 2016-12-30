@@ -1,9 +1,17 @@
 # AGC Assembly
-[![GitHub release](https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square)]()
-[![Current Version](http://vsmarketplacebadge.apphb.com/version/wopian.agc-assembly.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
-[![Install Count](http://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
-[![Github All Releases](https://img.shields.io/github/downloads/wopian/agc-assembly/total.svg?style=flat-square)](https://github.com/wopian/agc-assembly/releases)
-[![David](https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square)]()
+[![Travis]](https://travis-ci.org/wopian/agc-assembly)
+[![GitHub Release]](https://github.com/wopian/agc-assembly/releases)
+[![VS Code Version]](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
+[![VS Code Installs]](https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly)
+[![Github All Releases]](https://github.com/wopian/agc-assembly/releases)
+[![David]](https://david-dm.org/wopian/agc-assembly?type=dev)
+
+[Travis]:https://img.shields.io/travis/wopian/agc-assembly.svg?style=flat-square
+[GitHub Release]:https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square
+[GitHub All Releases]:https://img.shields.io/github/downloads/wopian/agc-assembly/total.svg?style=flat-square
+[VS Code Version]:http://vsmarketplacebadge.apphb.com/version/wopian.agc-assembly.svg?style=flat-square
+[VS Code Installs]:http://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square
+[David]:https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square
 
 [Visual Studio Code][0] syntax-highlighting for [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
@@ -90,14 +98,6 @@ $ npm i
 $ npm start
 ```
 
-[0]:https://code.visualstudio.com/
-[1]:http://www.ibiblio.org/apollo/
-[2]:https://github.com/rburkey2005/virtualagc
-[3]:https://github.com/jimlawton/AGC-Assembly
-[4]:https://nodejs.org/en/
-[5]:https://www.npmjs.com/
-[6]:https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly
-
 ## Known Issues
 
 ## Releases
@@ -136,3 +136,11 @@ $ npm start
 
 #### Fixed
 - Typo in settings
+
+[0]:https://code.visualstudio.com/
+[1]:http://www.ibiblio.org/apollo/
+[2]:https://github.com/rburkey2005/virtualagc
+[3]:https://github.com/jimlawton/AGC-Assembly
+[4]:https://nodejs.org/en/
+[5]:https://www.npmjs.com/
+[6]:https://marketplace.visualstudio.com/items?itemName=wopian.agc-assembly
