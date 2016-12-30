@@ -24,8 +24,9 @@ install:
     - travis_retry npm i
     - npm run vscode:prepublish
 
+postinstall:
+    - npm run postinstall
+
 script:
-    - npm run compile-build
-    - npm run compile-highlight
-    - node ./lib/build.js
+    - tsc -p ./
     - npm test
