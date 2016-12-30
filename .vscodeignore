@@ -1,9 +1,12 @@
 .vscode
+.vscode-test
+languages/*.yaml
+lib/build.js
 node_modules
 samples
-tests
-**/*.yaml
-src/build.js
+src
+test
+.babelrc
 .eslintrc.json
 .gitattributes
 .gitignore

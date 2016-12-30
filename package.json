@@ -45,7 +45,7 @@
   "activationEvents": [
     "onLanguage:agc"
   ],
-  "main": "./src/extension",
+  "main": "./lib/agc",
   "contributes": {
     "languages": [
       {
@@ -119,17 +119,25 @@
     ]
   },
   "devDependencies": {
-    "converter": "0.0.5",
-    "vscode": "^1.0.3",
-    "typescript": "^2.0.3",
-    "mocha": "^2.3.3",
-    "eslint": "^3.6.0",
+    "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
-    "@types/mocha": "^2.2.32"
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-latest": "^6.16.0",
+    "converter": "0.0.5",
+    "eslint": "^3.6.0",
+    "mocha": "^2.3.3",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.3"
   },
   "scripts": {
-    "start": "node ./src/build.js",
+    "compile-build": "babel src/build -d lib",
+    "compile-highlight": "babel src/highlight -d lib",
+    "compile-test": "babel src/test -d test",
+    "prestart": "npm run compile-build && npm run compile-highlight",
+    "pretest": "npm run compile-test && node ./node_modules/vscode/bin/install",
+    "start": "node ./lib/build.js",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "test": "node ./node_modules/vscode/bin/test && mocha --compilers js:babel-core/register"
   }
 }
