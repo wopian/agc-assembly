@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3] - 2016-12-30
+### Changed
+- Rewrote source code in TypeScript
+- Merged `languages` back into `syntax`
+
+### Added
+- Barebones helper for AGC
+
 ## [0.1.2] - 2016-12-29
 ### Fixed
 - Typo causing AGS and Argus to fail
@@ -7,10 +15,12 @@
 ## [0.1.1] - 2016-12-29
 ### Added
 - Missing comment definitions
+
 ### Changed
 - Moved language test files to samples
 - Moved images into `./images`
 - Moved build script into `./src`
+
 ### Fixed
 - Argus language tokenizer failure
 
@@ -22,6 +32,7 @@
 ### Added
 - Remainder of documentation
 - Package icon
+
 ### Fixed
 - Typo in settings
 
