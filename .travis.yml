@@ -20,6 +20,6 @@ install: travis_retry npm i
 script:
     - npm run compile-build
     - npm run compile-highlight
-    - npm start
+    - node ./lib/build.js
 
 test: npm test
