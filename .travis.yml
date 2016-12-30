@@ -21,5 +21,4 @@ script:
     - npm run compile-build
     - npm run compile-highlight
     - node ./lib/build.js
-
-test: npm test
+    - npm test
