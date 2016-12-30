@@ -126,7 +126,7 @@
     "babel-preset-latest": "^6.16.0",
     "converter": "0.0.5",
     "eslint": "^3.6.0",
-    "mocha": "^2.3.3",
+    "mocha": "^3.2.0",
     "typescript": "^2.0.3",
     "vscode": "^1.0.3"
   },
