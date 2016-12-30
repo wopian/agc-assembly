@@ -2,23 +2,23 @@ var vscode = require('vscode');
 
 var timeout = null;
 
-var COMMENT_PATTERN = /##/gi;
+var ANNOTATION_PATTERN = /##.*/gi;
 
-var COMMENT_STYLE = {
+var INVALID_DEPRECATED_STYLE = {
     overviewRulerLane: vscode.OverviewRulerLane.Right,
-    overviewRulerColor: '#F06292',
-    backgroundColor: '#F06292',
+    overviewRulerColor: '#FF0000',
+    backgroundColor: '#FF0000',
     light: {
-        color: '#fff'
+        color: '#FFF'
     },
     dark: {
         // this color will be used in dark color themes
-        color: '#fff'
+        color: '#FFF'
     }
 };
 
 function activate(context) {
-    var commentDecorationType = vscode.window.createTextEditorDecorationType(COMMENT_STYLE);
+    var annotationDecorationType = vscode.window.createTextEditorDecorationType(INVALID_DEPRECATED_STYLE);
     var activeEditor = vscode.window.activeTextEditor;
 
     if (activeEditor) {
@@ -48,20 +48,20 @@ function activate(context) {
             return;
         }
         var text = activeEditor.document.getText();
-        var comments = [];
+        var annotations = [];
         var match;
-        while (match = COMMENT_PATTERN.exec(text)) {
+        while (match = ANNOTATION_PATTERN.exec(text)) {
             var startPos = activeEditor.document.positionAt(match.index);
             var endPos = activeEditor.document.positionAt(match.index + match[0].length);
             var decoration = {
                 range: new vscode.Range(startPos, endPos),
                 //TODO: parse and show fixme content
-                hoverMessage: 'Deprecated: Annotation comments. Use # instead'
+                hoverMessage: 'Deprecated: Annotation comments.\n\nUse single # for comments'
             };
-            comments.push(decoration);
+            annotations.push(decoration);
         }
 
-        activeEditor.setDecorations(commentDecorationType, comments);
+        activeEditor.setDecorations(annotationDecorationType, annotations);
     }
 }
 exports.activate = activate;
