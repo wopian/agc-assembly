@@ -3,32 +3,8 @@
   "displayName": "AGC Assembly",
   "version": "0.1.2",
   "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
-  "badges": [
-    {
-      "url": "https://img.shields.io/github/commits-since/wopian/agc-assembly/0.1.2.svg?style=flat-square",
-      "href": "https://david-dm.org/wopian/agc-assembly?type=dev",
-      "description": "GitHub Commits"
-    },
-    {
-      "url": "https://david-dm.org/wopian/agc-assembly/dev-status.svg?style=flat-square",
-      "href": "https://david-dm.org/wopian/agc-assembly?type=dev",
-      "description": "devDependency Status"
-    }
-  ],
-  "engines": {
-    "vscode": "^1.5.0",
-    "node": "^7.2.1",
-    "npm": "^4.0.3"
-  },
   "publisher": "wopian",
   "license": "Apache-2.0",
-  "categories": [
-    "Languages"
-  ],
-  "keywords": [
-    "Apollo Guidance Computer",
-    "Assembly"
-  ],
   "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
   "repository": {
     "type": "git",
@@ -42,8 +18,18 @@
     "theme": "dark"
   },
   "icon": "images/icon.png",
+  "categories": [
+    "Languages"
+  ],
+  "keywords": [
+    "Apollo Guidance Computer",
+    "Assembly"
+  ],
   "activationEvents": [
-    "onLanguage:agc"
+    "onLanguage:agc",
+    "onLanguage:ags",
+    "onLanguage:argus",
+    "onLanguage:binsource"
   ],
   "main": "./out/src/extension",
   "contributes": {
@@ -117,6 +103,11 @@
         "path": "./syntaxes/binsource.tmLanguage"
       }
     ]
+  },
+  "engines": {
+    "vscode": "^1.5.0",
+    "node": "^7.2.1",
+    "npm": "^4.0.3"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.35",
