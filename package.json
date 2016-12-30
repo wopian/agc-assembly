@@ -137,7 +137,7 @@
     "prestart": "npm run compile-build && npm run compile-highlight",
     "pretest": "npm run compile-test && node ./node_modules/vscode/bin/install",
     "start": "node ./lib/build.js",
-    "postinstall": "node ./node_modules/vscode/bin/install",
+    "vscode:prepublish": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test && mocha --compilers js:babel-core/register"
   }
 }
