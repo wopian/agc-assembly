@@ -1,5 +1,6 @@
-import fs from 'fs';
-import converter from 'converter';
+'use strict';
+import * as fs from 'fs';
+import * as converter from 'converter';
 
 const options = {
     from: 'yml',

@@ -1,4 +1,6 @@
-import vscode from 'vscode';
+'use strict';
+import * as vscode from 'vscode';
+import agc from './syntax/agc';
 
 let timeout = null,
     ANNOTATION_PATTERN = /##.*/gi,
@@ -14,7 +16,8 @@ let timeout = null,
         }
     };
 
-function activate(context) {
+export function activate(context: vscode.ExtensionContext) {
+
     let annotationDecorationType = vscode.window.createTextEditorDecorationType(INVALID_DEPRECATED_STYLE),
         activeEditor = vscode.window.activeTextEditor;
 
@@ -57,5 +60,9 @@ function activate(context) {
 
         activeEditor.setDecorations(annotationDecorationType, annotations);
     }
+
 }
-export {activate};
+
+// this method is called when your extension is deactivated
+//export function deactivate() {
+//}
