@@ -101,6 +101,14 @@ $ npm start
 ## Known Issues
 
 ## Releases
+## 0.1.3 - 2016-12-30
+### Changed
+- Rewrote source code in TypeScript
+- Merged `languages` back into `syntax`
+
+### Added
+- Barebones helper for AGC
+
 ### 0.1.2 - 2016-12-29
 #### Fixed
 - Typo causing AGS and Argus to fail
@@ -128,7 +136,3 @@ $ npm start
 
 #### Fixed
 - Typo in settings
-
-### 0.0.2 - 2016-12-28
-#### Fixed
-- Minor bugs
