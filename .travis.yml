@@ -14,8 +14,15 @@ matrix:
 before_install:
     - npm update
     - npm prune
+    - if [ $TRAVIS_OS_NAME == "linux" ]; then
+        export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
+        sh -e /etc/init.d/xvfb start;
+        sleep 3;
+      fi
 
-install: travis_retry npm i
+install:
+    - travis_retry npm i
+    - npm run vscode:prepublish
 
 script:
     - npm run compile-build
