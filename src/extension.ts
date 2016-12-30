@@ -1,6 +1,5 @@
 'use strict';
 import * as vscode from 'vscode';
-import agc from './syntax/agc';
 
 let timeout = null,
     ANNOTATION_PATTERN = /##.*/gi,
