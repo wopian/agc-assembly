@@ -5,7 +5,7 @@ fileTypes: [agc]
 uuid: fb9fa55a-903a-4291-8e6f-bc8fbfafbe38
 
 patterns:
-  - comment: Annotation comments
+  - comment: Annotation Comments
     name: invalid.deprecated.agc_assembly
     match: "##.*"
 
