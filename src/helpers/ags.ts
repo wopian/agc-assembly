@@ -1,8 +1,9 @@
-export const OPTION: any = {
+const OPTION: any = {
     TABSIZE: 8,
     INSERTSPACES: false
 }
-export const PATTERN: any = {
+
+const PATTERN: any = {
     ANNOTATION_COMMENTS: null,
     COMMENTS: null,
     CONSTANTS: null,
@@ -13,7 +14,8 @@ export const PATTERN: any = {
     OPERATORS: null,
     REGISTERS: null,
 }
-export const STYLE: any = {
+
+const STYLE: any = {
     COMMENT_LINE_NUMBERSIGN: {},
     CONSTANT_NUMERIC: {},
     INVALID_DEPRECATED: {},
@@ -23,4 +25,10 @@ export const STYLE: any = {
     KEYWORD_OTHER: {},
     VARIABLE_LANGUAGE: {},
     VARIABLE_PARAMETER: {},
+}
+
+export const AGS: any = {
+    OPTION,
+    PATTERN,
+    STYLE
 }

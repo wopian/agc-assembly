@@ -1,15 +1,14 @@
 import { window, workspace, StatusBarAlignment, OverviewRulerLane, ExtensionContext, Range } from 'vscode';
-import * as AGC from './helpers/agc';
-import * as AGS from './helpers/ags';
-import * as ARGUS from './helpers/argus';
-import * as BINSOURCE from './helpers/binsource';
+import { AGC } from './helpers/agc';
+import { AGS } from './helpers/ags';
+import { ARGUS } from './helpers/argus';
+import { BINSOURCE } from './helpers/binsource';
+import { debugStatusBar } from './util/debug';
 
 let DEBUG: boolean = true;
-if (DEBUG) {
-    let statusBar = window.createStatusBarItem(StatusBarAlignment.Left, -100);
-    statusBar.text = 'AGC Assembly Debug Mode';
-    statusBar.show();
-}
+debugStatusBar(true);
+let varone = 'Hello world';
+let vartwo = 3;
 
 let timeout = null;
 
