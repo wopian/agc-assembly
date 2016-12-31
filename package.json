@@ -2,7 +2,7 @@
     "name": "agc-assembly",
     "displayName": "AGC Assembly",
     "version": "0.1.3",
-    "description": "Syntax-highlighting for Apollo Guidance Computer (AGC) assembly source code",
+    "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
     "publisher": "wopian",
     "license": "Apache-2.0",
     "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
@@ -31,7 +31,7 @@
         "onLanguage:argus",
         "onLanguage:binsource"
     ],
-    "main": "./out/src/extension",
+    "main": "./lib/src/extension",
     "contributes": {
         "languages": [
             {
@@ -43,7 +43,7 @@
                 "extensions": [
                     ".agc"
                 ],
-                "configuration": "./syntaxes/agc.json"
+                "configuration": "./lib/syntax/agc.json"
             },
             {
                 "id": "ags",
@@ -55,7 +55,7 @@
                     ".ags",
                     ".aea"
                 ],
-                "configuration": "./syntaxes/ags.json"
+                "configuration": "./lib/syntax/ags.json"
             },
             {
                 "id": "argus",
@@ -67,7 +67,7 @@
                     ".argus",
                     ".mitigus"
                 ],
-                "configuration": "./syntaxes/argus.json"
+                "configuration": "./lib/syntax/argus.json"
             },
             {
                 "id": "binsource",
@@ -78,36 +78,36 @@
                 "extensions": [
                     ".binsource"
                 ],
-                "configuration": "./syntaxes/binsource.json"
+                "configuration": "./lib/syntax/binsource.json"
             }
         ],
         "grammars": [
             {
                 "language": "agc",
                 "scopeName": "source.agc_assembly",
-                "path": "./syntaxes/agc.tmLanguage"
+                "path": "./lib/syntax/agc.tmLanguage"
             },
             {
                 "language": "ags",
                 "scopeName": "source.ags_assembly",
-                "path": "./syntaxes/ags.tmLanguage"
+                "path": "./lib/syntax/ags.tmLanguage"
             },
             {
                 "language": "argus",
                 "scopeName": "source.mitigus",
-                "path": "./syntaxes/argus.tmLanguage"
+                "path": "./lib/syntax/argus.tmLanguage"
             },
             {
                 "language": "binsource",
                 "scopeName": "text.binsource",
-                "path": "./syntaxes/binsource.tmLanguage"
+                "path": "./lib/syntax/binsource.tmLanguage"
             }
         ]
     },
     "engines": {
         "vscode": "^1.5.0",
         "node": "^7.2.1",
-        "npm": "^4.0.3"
+        "npm": "^4.0.5"
     },
     "devDependencies": {
         "@types/mocha": "^2.2.35",
@@ -120,9 +120,9 @@
         "vscode": "^1.0.3"
     },
     "scripts": {
-        "vscode:prepublish": "tsc -p ./",
+        "vscode:prepublish": "npm run b",
         "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
+        "test": "node ./node_modules/vscode/bin/test",
+        "b": "tsc -p ./ && node lib/src/build.js"
     }
 }

@@ -1,16 +1,58 @@
-'use strict';
 import * as vscode from 'vscode';
+
+let DEBUG: boolean = true;
+if (DEBUG) {
+    let statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, -100);
+    statusBar.text = 'AGC Assembly Debug Mode';
+    statusBar.show();
+    //statusBar.color = 'white';
+    /*
+    updateStatusBarVisibility(vscode.window.activeTextEditor);
+    function updateStatusBarVisibility(editor: vscode.TextEditor): void {
+        showStatusBar(DEBUG);
+    }
+    vscode.window.onDidChangeActiveTextEditor(updateStatusBarVisibility);
+    updateStatusBarVisibility(vscode.window.activeTextEditor);
+    function showStatusBar(show: boolean): void {
+        statusBar.show();
+    }
+    */
+}
 
 let timeout = null;
 
+/*
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │   Initialise Language Specific Options|Patterns|Styles               │
+    └──────────────────────────────────────────────────────────────────────┘
+
+        ※ Options
+            tabSize             number
+            insertSpaces        boolean
+
+        ※ Patterns
+            .                   regexp
+
+        ※ Styles
+            borderColor:        rgba|hex
+            borderRadius:       px
+            borderSpacing:      px
+            borderStyle:        solid|dashed|dotted
+            borderWidth:        px
+            color:              rgba|hex
+            backgroundColor:    rgba|hex
+            overviewRulerColor: rgba|hex
+            overviewRulerLane:  left|center|right|full
+*/
+
 let AGC: any = {
-    OPTIONS: {
-        TAB_SIZE: 8,
-        INSERT_SPACES: false
+    OPTION: {
+        TABSIZE: 8,
+        INSERTSPACES: false
     },
     PATTERN: {
-        ANNOTATION_COMMENTS: '/##.*/gi',
-        COMMENTS: '/#.*/gi',
+        ANNOTATION_COMMENTS: /##.*/gi,
+        COMMENTS: /#.*/gi,
         LABEL: null,
         DECIMAL_INTERGERS: null,
         OCTAL_INTERGERS: null,
@@ -29,13 +71,21 @@ let AGC: any = {
     STYLE: {
         INVALID_DEPRECATED: {
             overviewRulerLane: vscode.OverviewRulerLane.Right,
-            overviewRulerColor: '#FF0000',
-            backgroundColor: '#FF0000',
+            cursor: 'pointer',
+            //borderColor: 'rgba(255,255,255,.05)',
+            //borderRadius: '10px',
+            //borderSpacing: '10px',
+            //borderStyle: 'solid',
+            //borderWidth: '1px',
             light: {
-                color: '#FFF'
+                //color: '#FFF',
+                overviewRulerColor: 'rgba(0,0,0,.1)',
+                backgroundColor: 'rgba(0,0,0,.1)'
             },
             dark: {
-                color: '#FFF'
+                //color: '#FFF',
+                overviewRulerColor: 'rgba(255,255,255,.1)',
+                backgroundColor: 'rgba(255,255,255,.1)'
             }
         },
         COMMENT_LINE_NUMBERSIGN: {},
@@ -50,8 +100,8 @@ let AGC: any = {
 
 let AGS: any = {
     OPTIONS: {
-        TAB_SIZE: 8,
-        INSERT_SPACES: false
+        TABSIZE: 8,
+        INSERTSPACES: false
     },
     PATTERN: {
         ANNOTATION_COMMENTS: null,
@@ -79,8 +129,8 @@ let AGS: any = {
 
 let ARGUS: any = {
     OPTIONS: {
-        TAB_SIZE: 8,
-        INSERT_SPACES: true
+        TABSIZE: 8,
+        INSERTSPACES: true
     },
     PATTERN: {
         ANNOTATION_COMMENTS: null,
@@ -97,8 +147,8 @@ let ARGUS: any = {
 
 let BINSOURCE: any = {
     OPTIONS: {
-        TAB_SIZE: 8,
-        INSERT_SPACES: false
+        TABSIZE: 8,
+        INSERTSPACES: false
     },
     PATTERN: {
         COMMENTS: null,
@@ -114,88 +164,80 @@ let BINSOURCE: any = {
     }
 }
 
-console.log(AGC);
-console.log(AGC.PATTERN.ANNOTATION_COMMENTS);
-console.log(AGC.STYLE.INVALID_DEPRECATED)
-
-// TODO: Implement above code
-
-const ANNOTATION_PATTERN = /##.*/gi;
-const INVALID_DEPRECATED_STYLE = {
-    overviewRulerLane: vscode.OverviewRulerLane.Right,
-    overviewRulerColor: '#FF0000',
-    backgroundColor: '#FF0000',
-    light: {
-        color: '#FFF'
-    },
-    dark: {
-        color: '#FFF'
-    }
-};
-
 export function activate(context: vscode.ExtensionContext) {
-
     let activeEditor = vscode.window.activeTextEditor;
-    console.log(activeEditor);
-
-/*
-    ┌──────────────────────────────────────────────────────────────────────┐
-    │   Set basic language specific options                                │
-    └──────────────────────────────────────────────────────────────────────┘
-
-    ※ Tab Size
-*/
-    activeEditor.options.tabSize = 8;
-/*
-    ※ Insert Spaces
-*/
-    activeEditor.options.insertSpaces = false;
-
     let language: string;
     language = vscode.window.activeTextEditor.document.languageId;
-    console.log(`AGC Assembly: Detected '${language}' as active language`);
+    if (DEBUG) console.log(`AGC Assembly: Detected '${vscode.window.activeTextEditor.document.languageId}' as active language`)
 
-    let annotationDecorationType = vscode.window.createTextEditorDecorationType(INVALID_DEPRECATED_STYLE);
-
-    if (activeEditor.document.languageId === 'agc') {
-        triggerUpdateDecorations();
-        console.log('AGC Assembly: activeEditor called triggerUpdateDecorations');
+    if (vscode.window.activeTextEditor.document.languageId !== ('agc' || 'ags' || 'argus' || 'binsource')) {
+        console.error(`AGC Assembly: Detected '${vscode.window.activeTextEditor.document.languageId}' as active language`);
+        return;
     }
+/*
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │   Set options                                                        │
+    └──────────────────────────────────────────────────────────────────────┘
+*/
+    switch (vscode.window.activeTextEditor.document.languageId) {
+        case 'agc':
+            updateOptions(AGC.OPTION);
+            break;
+        case 'ags':
+            updateOptions(AGS.OPTION);
+            break;
+        case 'argus':
+            updateOptions(ARGUS.OPTION);
+            break;
+        case 'binsource':
+            updateOptions(ARGUS.OPTION);
+            break;
+    }
+
+    vscode.window.onDidChangeTextEditorOptions(options => {
+        if (options) updateOptions(AGC.OPTION)
+    });
+    function updateOptions(OPTION) {
+        activeEditor.options.tabSize = OPTION.TABSIZE ? OPTION.TABSIZE : activeEditor.options.tabSize;
+        activeEditor.options.insertSpaces = OPTION.INSERTSPACES ? OPTION.INSERTSPACES : activeEditor.options.insertSpaces;
+        if (DEBUG) console.log(
+            `AGC Assembly: Set tabSize to ${OPTION.TABSIZE}\n` +
+            `AGC Assembly: Set insertSpaces to ${OPTION.INSERTSPACES}`)
+    }
+
+    if (language === ('agc' || 'ags' || 'argus' || 'binsource')) triggerUpdateDecorations()
 
     vscode.window.onDidChangeActiveTextEditor(editor => {
         activeEditor = editor;
-        if (editor) {
-            triggerUpdateDecorations();
-            console.log('AGC Assembly: onDidChangeActiveTextEditor called triggerUpdateDecorations');
-        }
-    }, null, context.subscriptions);
+        if (editor) triggerUpdateDecorations()
+        //}, null, context.subscriptions);
+    }, null, null);
 
     vscode.workspace.onDidChangeTextDocument(event => {
-        if (activeEditor && event.document === activeEditor.document) {
-            triggerUpdateDecorations();
-            console.log('AGC Assembly: onDidChangeTextDocument called triggerUpdateDecorations');
-        }
-    }, null, context.subscriptions);
+        if (activeEditor && event.document === activeEditor.document) triggerUpdateDecorations()
+    //}, null, context.subscriptions);
+    }, null, null);
 
     function triggerUpdateDecorations() {
         timeout && clearTimeout(timeout);
         timeout = setTimeout(updateDecorations, 0);
-        console.log(`AGC Assembly: triggerUpdateDecorations set timeout to '${timeout}'`);
     }
 
     function updateDecorations() {
-        if (!(activeEditor.document.languageId === 'agc')) {
-            console.log('AGC Assembly: No longer active editor');
+        if (vscode.window.activeTextEditor.document.languageId !== ('agc' || 'ags' || 'argus' || 'binsource')) {
+            console.error(`AGC Assembly: Detected '${language}' as active language`);
             return;
         }
 
-        let language: string;
-        language = vscode.window.activeTextEditor.document.languageId;
-
-        switch (language) {
+        switch (vscode.window.activeTextEditor.document.languageId) {
             case 'agc':
                 console.log('AGC Assembly: Enabled AGC Helper');
-                agcHelper();
+                //agcHelper();
+                for (let key in AGC.STYLE) {
+                    let decorationType: Array<1>;
+                    decorationType[key] = vscode.window.createTextEditorDecorationType(AGC.STYLE[key]);
+                    console.log(`Key: ${key} | Type: ${decorationType}`);;
+                }
                 break;
             case 'ags':
                 console.log('AGC Assembly: AGS helper not implemented');
@@ -208,26 +250,31 @@ export function activate(context: vscode.ExtensionContext) {
                 break;
         }
 
-        function agcHelper() {
+        //function agcHelper() {
+            let annotationDecorationType = vscode.window.createTextEditorDecorationType(AGC.STYLE.INVALID_DEPRECATED);
+
             let text = activeEditor.document.getText();
             let annotations = [];
             let match;
 
-            while (match = ANNOTATION_PATTERN.exec(text)) {
-                let startPos = activeEditor.document.positionAt(match.index);
-                let endPos = activeEditor.document.positionAt(match.index + match[0].length);
-                let decoration = {
-                    range: new vscode.Range(startPos, endPos),
-                    hoverMessage: 'Deprecated: Annotation comments.\n\nUse single # for comments'
-                };
-                annotations.push(decoration);
+            while (match = AGC.PATTERN.ANNOTATION_COMMENTS.exec(text)) {
+                    let startPos = activeEditor.document.positionAt(match.index);
+                    let endPos = activeEditor.document.positionAt(match.index + match[0].length);
+                    let decoration = {
+                        range: new vscode.Range(startPos, endPos),
+                        hoverMessage: 'Deprecated: Annotation comments.\n\nUse single # for comments'
+                    };
+                    annotations.push(decoration);
             }
             activeEditor.setDecorations(annotationDecorationType, annotations);
-        }
-
+       // }
     }
 }
 
 // this method is called when your extension is deactivated
 export function deactivate() {
+/*
+    TODO: Dispose of decorations
+*/
+//TextEditorDecorationType;
 }

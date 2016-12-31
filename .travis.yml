@@ -22,11 +22,9 @@ before_install:
 
 install:
     - travis_retry npm i
-    - npm run vscode:prepublish
 
 postinstall:
-    - npm run postinstall
+    - npm run vscode:prepublish
 
 script:
-    - tsc -p ./
-    - npm test --silent
+    - npm t --silent
