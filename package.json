@@ -1,128 +1,129 @@
 {
-    "name": "agc-assembly",
-    "displayName": "AGC Assembly",
-    "version": "0.1.3",
-    "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
-    "publisher": "wopian",
-    "license": "Apache-2.0",
-    "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wopian/agc-assembly"
-    },
-    "bugs": {
-        "url": "https://github.com/wopian/agc-assembly/issues"
-    },
-    "galleryBanner": {
-        "color": "#0B3D91",
-        "theme": "dark"
-    },
-    "icon": "images/icon.png",
-    "categories": [
-        "Languages"
-    ],
-    "keywords": [
-        "Apollo Guidance Computer",
-        "Assembly"
-    ],
-    "activationEvents": [
-        "onLanguage:agc",
-        "onLanguage:ags",
-        "onLanguage:argus",
-        "onLanguage:binsource"
-    ],
-    "main": "./lib/src/extension",
-    "contributes": {
-        "languages": [
-            {
-                "id": "agc",
-                "aliases": [
-                    "AGC Assembly",
-                    "agc"
-                ],
-                "extensions": [
-                    ".agc"
-                ],
-                "configuration": "./lib/syntax/agc.json"
-            },
-            {
-                "id": "ags",
-                "aliases": [
-                    "AGS Assembly",
-                    "ags"
-                ],
-                "extensions": [
-                    ".ags",
-                    ".aea"
-                ],
-                "configuration": "./lib/syntax/ags.json"
-            },
-            {
-                "id": "argus",
-                "aliases": [
-                    "ARGUS H800 Assembly Language",
-                    "argus"
-                ],
-                "extensions": [
-                    ".argus",
-                    ".mitigus"
-                ],
-                "configuration": "./lib/syntax/argus.json"
-            },
-            {
-                "id": "binsource",
-                "aliases": [
-                    "AGC Binsource",
-                    "binsource"
-                ],
-                "extensions": [
-                    ".binsource"
-                ],
-                "configuration": "./lib/syntax/binsource.json"
-            }
+  "name": "agc-assembly",
+  "displayName": "AGC Assembly",
+  "version": "0.1.3",
+  "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
+  "publisher": "wopian",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wopian/agc-assembly"
+  },
+  "bugs": {
+    "url": "https://github.com/wopian/agc-assembly/issues"
+  },
+  "galleryBanner": {
+    "color": "#0B3D91",
+    "theme": "dark"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "Languages"
+  ],
+  "keywords": [
+    "Apollo Guidance Computer",
+    "Assembly"
+  ],
+  "activationEvents": [
+    "onLanguage:agc",
+    "onLanguage:ags",
+    "onLanguage:argus",
+    "onLanguage:binsource"
+  ],
+  "main": "./lib/src/extension",
+  "contributes": {
+    "languages": [
+      {
+        "id": "agc",
+        "aliases": [
+          "AGC Assembly",
+          "agc"
         ],
-        "grammars": [
-            {
-                "language": "agc",
-                "scopeName": "source.agc_assembly",
-                "path": "./lib/syntax/agc.tmLanguage"
-            },
-            {
-                "language": "ags",
-                "scopeName": "source.ags_assembly",
-                "path": "./lib/syntax/ags.tmLanguage"
-            },
-            {
-                "language": "argus",
-                "scopeName": "source.mitigus",
-                "path": "./lib/syntax/argus.tmLanguage"
-            },
-            {
-                "language": "binsource",
-                "scopeName": "text.binsource",
-                "path": "./lib/syntax/binsource.tmLanguage"
-            }
-        ]
-    },
-    "engines": {
-        "vscode": "^1.5.0",
-        "node": "^7.2.1",
-        "npm": "^4.0.5"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.35",
-        "@types/node": "^6.0.55",
-        "converter": "0.0.5",
-        "eslint": "^3.12.2",
-        "mocha": "^3.2.0",
-        "tslint": "^4.2.0",
-        "typescript": "^2.1.4",
-        "vscode": "^1.0.3"
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run b",
-        "compile": "tsc -watch -p ./",
-        "test": "node ./node_modules/vscode/bin/test",
-        "b": "tsc -p ./ && node lib/src/build.js"
-    }
+        "extensions": [
+          ".agc"
+        ],
+        "configuration": "./lib/syntax/agc.json"
+      },
+      {
+        "id": "ags",
+        "aliases": [
+          "AGS Assembly",
+          "ags"
+        ],
+        "extensions": [
+          ".ags",
+          ".aea"
+        ],
+        "configuration": "./lib/syntax/ags.json"
+      },
+      {
+        "id": "argus",
+        "aliases": [
+          "ARGUS H800 Assembly Language",
+          "argus"
+        ],
+        "extensions": [
+          ".argus",
+          ".mitigus"
+        ],
+        "configuration": "./lib/syntax/argus.json"
+      },
+      {
+        "id": "binsource",
+        "aliases": [
+          "AGC Binsource",
+          "binsource"
+        ],
+        "extensions": [
+          ".binsource"
+        ],
+        "configuration": "./lib/syntax/binsource.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "agc",
+        "scopeName": "source.agc_assembly",
+        "path": "./lib/syntax/agc.tmLanguage"
+      },
+      {
+        "language": "ags",
+        "scopeName": "source.ags_assembly",
+        "path": "./lib/syntax/ags.tmLanguage"
+      },
+      {
+        "language": "argus",
+        "scopeName": "source.mitigus",
+        "path": "./lib/syntax/argus.tmLanguage"
+      },
+      {
+        "language": "binsource",
+        "scopeName": "text.binsource",
+        "path": "./lib/syntax/binsource.tmLanguage"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.5.0",
+    "node": "^7.2.1",
+    "npm": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.35",
+    "@types/node": "^6.0.55",
+    "chai": "^3.5.0",
+    "converter": "0.0.5",
+    "eslint": "^3.12.2",
+    "mocha": "^3.2.0",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4",
+    "vscode": "^1.0.3"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run b",
+    "compile": "tsc -watch -p ./",
+    "test": "node ./node_modules/vscode/bin/test",
+    "b": "tsc -p ./ && node lib/src/build.js"
+  }
 }
