@@ -4,6 +4,10 @@ import * as vscode from 'vscode';
 let timeout = null;
 
 let AGC: any = {
+    OPTIONS: {
+        TAB_SIZE: 8,
+        INSERT_SPACES: false
+    },
     PATTERN: {
         ANNOTATION_COMMENTS: '/##.*/gi',
         COMMENTS: '/#.*/gi',
@@ -45,6 +49,10 @@ let AGC: any = {
 }
 
 let AGS: any = {
+    OPTIONS: {
+        TAB_SIZE: 8,
+        INSERT_SPACES: false
+    },
     PATTERN: {
         ANNOTATION_COMMENTS: null,
         COMMENTS: null,
@@ -70,6 +78,10 @@ let AGS: any = {
 }
 
 let ARGUS: any = {
+    OPTIONS: {
+        TAB_SIZE: 8,
+        INSERT_SPACES: true
+    },
     PATTERN: {
         ANNOTATION_COMMENTS: null,
         ANNOTATION_COMMENTS2: null,
@@ -84,6 +96,10 @@ let ARGUS: any = {
 }
 
 let BINSOURCE: any = {
+    OPTIONS: {
+        TAB_SIZE: 8,
+        INSERT_SPACES: false
+    },
     PATTERN: {
         COMMENTS: null,
         OPERATORS: null,
