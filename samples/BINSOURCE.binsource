@@ -1,6 +1,4 @@
 ; Test file for Visual Studio Code highlighting.
-; This is just a file of meaningless random AGC statements to be used for
-; verifying that Visual Studio Code syntax highlighting for AGC code is valid
 
 org 72
 
