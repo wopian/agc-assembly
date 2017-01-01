@@ -1,11 +1,9 @@
 # AGC Assembly
-
 [Visual Studio Code][0] extension for syntax highlighting [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 Based on [AGC Assembly][3] for Sublime Text.
 
 ## Languages
-
 - `agc` - AGC (Command Module and Lunar Module) assembly language,
 - `ags` - AGS (Lunar Module Abort Guidance System) assembly language,
 - `argus` - ARGUS H800 Assembly Language,
@@ -17,7 +15,6 @@ Based on [AGC Assembly][3] for Sublime Text.
 [![VS Code Rating]][6]
 
 Install AGC Assembly from [VS Code Marketplace][6].
-
 - Launch VS Code Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>)
 - Input `ext install agc-assembly`
 - Reload VS Code
@@ -27,22 +24,21 @@ Install AGC Assembly from [VS Code Marketplace][6].
 [![Github All Releases]][7]
 
 ### From Source
-
 - Download the [latest release][7]
 - Extract the zip into:
     - **Windows** `%HOMEPATH%/.vscode/extensions`
     - **Mac** `~/.vscode/extensions`
     - **Linux** `~/.vscode/extensions`
+- Reload VS Code
 
 ### From VSIX
-
 - Download the VSIX binary from the [latest release][7]
 - Launch VS Code Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd>)
-- Type `>install vsix`
+- Input `install vsix`
 - Navigate to VSIX binary
+- Reload VS Code
 
 ## Suggested Settings
-
 Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source.
 
 ### AGC, AGS & Binsource
@@ -99,7 +95,7 @@ npm run b
 
 ### Testing
 ```bash
-npm test
+npm t
 ```
 
 ## Known Issues
