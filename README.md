@@ -78,20 +78,33 @@ Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns
 [![David]][9]
 [![DavidDev]][10]
 
+### Setup
 ```bash
 # Check you're using NodeJS 7.0.0 or above
 node -v
 # Check you're using npm 4.0.0 or above
 npm -v
+# Download source code
+git clone https://github.com/wopian/agc-assembly.git
+cd agc-assembly
 # Install dependencies
 npm i
-# Compile typescript and build language/extension files
+```
+
+### Building
+```bash
+# Compile typescript & yaml
 npm run b
 ```
 
-Make changes to language grammar rules by modifying `.YAML-tmLanguage`. `.tmLanguage` files are auto-generated.
+### Testing
+```bash
+npm test
+```
 
 ## Known Issues
+- Decoration is still applied if the file's language is changed. 
+  - This can temporarily be fixed by just switching tabs.
 
 ## Releases
 ## 0.1.3 - 2016-12-30
