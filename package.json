@@ -127,7 +127,7 @@
   "scripts": {
     "vscode:prepublish": "npm run b",
     "compile": "tsc -watch -p ./",
-    "test": "node ./node_modules/vscode/bin/test",
+    "test": "node ./node_modules/vscode/bin/test --silent",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "b": "tsc -p ./ && node lib/src/build.js"
   }
