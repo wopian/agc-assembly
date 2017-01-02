@@ -3,6 +3,7 @@
 node_modules/**/*
 lib/test/**/*
 lib/src/build.*
+lib/src/createFile.*
 spec/**/*
 src/**/*
 test/**/*

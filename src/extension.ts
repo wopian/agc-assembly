@@ -5,8 +5,8 @@ import { ARGUS } from './helpers/argus';
 import { BINSOURCE } from './helpers/binsource';
 import { debugStatusBar } from './util/debug';
 
-let DEBUG: boolean = true;
-debugStatusBar(true);
+let DEBUG: boolean = undefined;
+debugStatusBar(DEBUG);
 let varone = 'Hello world';
 let vartwo = 3;
 
@@ -20,7 +20,7 @@ export function activate(context: ExtensionContext) {
     language = window.activeTextEditor.document.languageId;
     if (DEBUG) console.log(`AGC Assembly: Detected '${language}' as active language`);
 
-    if (language !== ('agc' || 'ags' || 'argus' || 'binsource')) {
+    if ((DEBUG) && (language !== ('agc' || 'ags' || 'argus' || 'binsource'))) {
         console.error(`AGC Assembly: Detected '${language}' as active language`);
         return;
     }
