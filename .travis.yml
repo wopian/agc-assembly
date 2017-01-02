@@ -4,7 +4,9 @@ cache:
     directories:
         - node_modules
 
-node_js: node
+node_js:
+    - node
+    - 7.0.0
 
 sudo: false
 
@@ -12,6 +14,8 @@ matrix:
     fast_finish: true
 
 before_install:
+    - if [[ `npm -v` < 4.0.0 ]]; then npm i -g npm; fi
+    - npm -v
     - npm update
     - npm prune
     - if [ $TRAVIS_OS_NAME == "linux" ]; then
@@ -24,7 +28,7 @@ install:
     - travis_retry npm i
 
 postinstall:
-    - npm run vscode:prepublish
+    - npm run postinstall
 
 script:
     - npm t --silent

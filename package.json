@@ -105,24 +105,24 @@
     ]
   },
   "engines": {
-    "vscode": "^1.5.0",
-    "node": "^7.2.1",
-    "npm": "^4.0.5"
+    "vscode": ">=1.5.0",
+    "node": ">=7.0.0",
+    "npm": ">=4.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/chai-as-promised": "0.0.29",
-    "@types/mocha": "^2.2.35",
-    "@types/node": "^6.0.55",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
-    "converter": "0.0.5",
-    "eslint": "^3.12.2",
-    "mocha": "^3.2.0",
-    "rimraf": "^2.5.4",
-    "tslint": "^4.2.0",
-    "typescript": "^2.1.4",
-    "vscode": "^1.0.3"
+    "@types/chai": "~3.4.34",
+    "@types/chai-as-promised": "~0.0.29",
+    "@types/mocha": "~2.2.35",
+    "@types/node": "~6.0.55",
+    "chai": "~3.5.0",
+    "chai-as-promised": "~6.0.0",
+    "converter": "~0.0.5",
+    "eslint": "~3.12.2",
+    "mocha": "~3.2.0",
+    "rimraf": "~2.5.4",
+    "tslint": "~4.2.0",
+    "typescript": "~2.1.4",
+    "vscode": "~1.0.3"
   },
   "scripts": {
     "vscode:prepublish": "npm run b",
