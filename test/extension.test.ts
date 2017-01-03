@@ -37,12 +37,12 @@ suite('Chai Tests', () => {
 
 const languages = [
     // { name: 'Foo Assembly', ext: [ 'foo', 'bar' ] },
-    { name: 'AGC Assembly', ext: 'agc' },
-    { name: 'AGS Assembly', ext: 'ags' },
-    { name: 'AGS Assembly', ext: 'aea' },
-    { name: 'ARGUS H800 Assembly Language', ext: 'argus' },
-    { name: 'ARGUS H800 Assembly Language', ext: 'mitigus' },
-    { name: 'AGC Binsource', ext: 'binsource' }
+    { name: 'AGC Assembly', ext: 'agc', lang: 'agc' },
+    { name: 'AGS Assembly', ext: 'ags', lang: 'ags' },
+    { name: 'AGS Assembly', ext: 'aea', lang: 'ags' },
+    { name: 'ARGUS H800 Assembly Language', ext: 'argus', lang: 'argus' },
+    { name: 'ARGUS H800 Assembly Language', ext: 'mitigus', lang: 'argus' },
+    { name: 'AGC Binsource', ext: 'binsource', lang: 'binsource' }
 ];
 
 const files = [
@@ -75,7 +75,6 @@ languages.forEach(l => {
                     let File = new FileController();
                     let fileName = `${f.fileName}.${l.ext}`;
                     let filePath = join(specPath, fileName);
-
                     File.createFile(filePath).then((returnedFileName) => {
                         expect(returnedFileName).to.equal(filePath);
                         expect(existsSync(filePath)).to.equal('true');
@@ -91,17 +90,13 @@ languages.forEach(l => {
                     let fileName = `${f.fileName}.${l.ext}`;
                     let filePath = join(specPath, fileName);
                     return workspace.openTextDocument(`${normalize(filePath)}`).then(document => {
-                        return assert.eventually.equal(Promise.resolve(document.languageId), l.ext);
-                        //let PromisesA = document.languageId;
-                        //return Promise.all([
-                        //    assert.eventually.equal(Promise.resolve(document.languageId), 'agc')
-                        //]);
-                        //return assert.eventually.equal(Promise.resolve(document.languageId), 'agc');
+                        return assert.eventually.equal(Promise.resolve(document.languageId), l.lang);
                     });
                 });
             });
         });
 
+        /*
         suite('Check Language Options', () => {
             files.forEach(f => {
                 test(`expect ${f.fileName}.${l.ext} to have tabSize 8`, () => {
@@ -114,5 +109,6 @@ languages.forEach(l => {
                 });
             });
         });
+        */
     });
 });
