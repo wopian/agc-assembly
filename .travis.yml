@@ -1,5 +1,9 @@
 language: node_js
 
+os:
+    - osx
+    - linux
+
 cache:
     directories:
         - node_modules
@@ -27,8 +31,8 @@ before_install:
 
 install:
     - travis_retry npm i
-    - npm run postinstall
-    - npm run b
+    - npm run vscode:install
+    - npm run vscode:prepublish
 
 script:
     - npm t --silent
