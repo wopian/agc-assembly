@@ -113,7 +113,7 @@
     "@types/chai": "~3.4.34",
     "@types/chai-as-promised": "~0.0.29",
     "@types/mocha": "~2.2.35",
-    "@types/node": "~6.0.55",
+    "@types/node": "~6.0.56",
     "chai": "~3.5.0",
     "chai-as-promised": "~6.0.0",
     "converter": "~0.0.5",
