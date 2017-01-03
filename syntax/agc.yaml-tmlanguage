@@ -2,7 +2,7 @@
 name: AGC Assembly
 scopeName: source.agc_assembly
 fileTypes: [agc]
-uuid: fb9fa55a-903a-4291-8e6f-bc8fbfafbe38
+uuid: 6a46a35d-36df-436b-898f-eac2d27e5e3a
 
 patterns:
   - comment: Annotation Comments
