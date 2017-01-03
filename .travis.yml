@@ -17,9 +17,6 @@ matrix:
     fast_finish: true
 
 before_install:
-# Update npm to latest version
-    - if [[ `node -v` >= 7* ]]; then npm i -g npm; fi
-    - npm -v
     - npm update
     - npm prune
     - if [ $TRAVIS_OS_NAME == "linux" ]; then
