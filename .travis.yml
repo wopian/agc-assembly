@@ -30,6 +30,7 @@ install:
 
 postinstall:
     - npm run postinstall
+    - npm run b
 
 script:
     - npm t --silent
