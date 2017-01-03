@@ -27,8 +27,6 @@ before_install:
 
 install:
     - travis_retry npm i
-
-postinstall:
     - npm run postinstall
     - npm run b
 
