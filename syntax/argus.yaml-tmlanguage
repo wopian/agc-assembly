@@ -1,0 +1,21 @@
+name: ARGUS H800 Assembly Language
+scopeName: source.mitigus
+fileTypes: [argus, mitigus]
+uuid: db04aa4b-b4b2-4e42-b9e6-3bb6ca2ecf6f
+
+patterns:
+  - comment: Annotation comments
+    name: invalid.deprecated.mitigus
+    match: "^#.*"
+
+  - comment: Annotation comments
+    name: invalid.deprecated.mitigus
+    match: "^##.*"
+
+  - comment: Log Section cards.
+    name: comment.line.number-sign.mitigus
+    match: "^L .*"
+
+  - comment: Source cards.
+    name: constant.numeric.mitigus
+    match: "^ [0-9]+ *[*]?"

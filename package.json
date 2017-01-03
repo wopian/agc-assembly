@@ -85,22 +85,22 @@
       {
         "language": "agc",
         "scopeName": "source.agc_assembly",
-        "path": "./lib/syntax/agc.tmLanguage"
+        "path": "./lib/syntax/agc.tmlanguage"
       },
       {
         "language": "ags",
         "scopeName": "source.ags_assembly",
-        "path": "./lib/syntax/ags.tmLanguage"
+        "path": "./lib/syntax/ags.tmlanguage"
       },
       {
         "language": "argus",
         "scopeName": "source.mitigus",
-        "path": "./lib/syntax/argus.tmLanguage"
+        "path": "./lib/syntax/argus.tmlanguage"
       },
       {
         "language": "binsource",
         "scopeName": "text.binsource",
-        "path": "./lib/syntax/binsource.tmLanguage"
+        "path": "./lib/syntax/binsource.tmlanguage"
       }
     ]
   },
