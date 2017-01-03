@@ -18,7 +18,7 @@ matrix:
 
 before_install:
 # Update npm to latest version
-    - if [[ `node -v` >= 7.0.0 ]]; then npm i -g npm; fi
+    - if [[ `node -v` >= 7* ]]; then npm i -g npm; fi
     - npm -v
     - npm update
     - npm prune
