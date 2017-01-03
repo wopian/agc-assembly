@@ -1,7 +1,7 @@
 {
   "name": "agc-assembly",
   "displayName": "AGC Assembly",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
   "publisher": "wopian",
   "license": "Apache-2.0",
@@ -106,8 +106,8 @@
   },
   "engines": {
     "vscode": ">=1.5.0",
-    "node": ">=7.0.0",
-    "npm": ">=4.0.0"
+    "node": ">=4.7.0",
+    "npm": ">=2.15.11"
   },
   "devDependencies": {
     "@types/chai": "~3.4.34",

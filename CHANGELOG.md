@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.4] - 2017-01-03
+### Added
+- Helper for AGC
+- Options for AGS, Argus and Binsource
+
 ## [0.1.3] - 2016-12-30
 ### Changed
 - Rewrote source code in TypeScript
