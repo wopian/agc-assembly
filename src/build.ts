@@ -9,7 +9,7 @@ mkdir('./lib/syntax', (callback) => {});
 const language = (l, i, a) => {
     console.log(`Building ${l[1]} (${i + 1}/${a.length})`);
     let options = { from: 'yml', to: 'plist' };
-    let from = createReadStream(`./syntax/${l[0]}.YAML-tmLanguage`);
+    let from = createReadStream(`./syntax/${l[0]}.yaml-tmlanguage`);
     let to = createWriteStream(`./lib/syntax/${l[0]}.tmLanguage`);
     let via = converter(options);
     from.pipe(via).pipe(to);
@@ -18,7 +18,7 @@ const language = (l, i, a) => {
 const languageOption = (l, i, a) => {
     console.log(`Building ${l[1]} Options (${i + 1}/${a.length})`);
     let options = { from: 'yml', to: 'json' };
-    let from = createReadStream(`./syntax/${l[0]}.yaml`);
+    let from = createReadStream(`./syntax/${l[0]}-config.yaml`);
     let to = createWriteStream(`./lib/syntax/${l[0]}.json`);
     let via = converter(options);
     from.pipe(via).pipe(to);
