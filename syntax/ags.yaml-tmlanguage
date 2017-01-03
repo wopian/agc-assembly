@@ -1,7 +1,7 @@
 name: AGS Assembly
 scopeName: source.ags_assembly
 fileTypes: [ags, aea]
-uuid: ebcb89b7-fbf9-467d-90ec-7ab247800e0c
+uuid: 6ec1fe58-24fe-43d5-8b3c-e90c58e83ab2
 
 patterns:
   - comment: Annotated Comments

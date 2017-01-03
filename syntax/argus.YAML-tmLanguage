@@ -1,7 +1,7 @@
 name: ARGUS H800 Assembly Language
 scopeName: source.mitigus
 fileTypes: [argus, mitigus]
-uuid: db04aa4b-b4b2-4e42-b9e6-3bb6ca2ecf6f
+uuid: 01cd07d1-39d2-411c-817d-725e9650e40f
 
 patterns:
   - comment: Annotation comments
