@@ -114,7 +114,7 @@
     "@types/chai-as-promised": "0.0.29",
     "@types/mkdirp": "0.3.29",
     "@types/mocha": "2.2.35",
-    "@types/node": "6.0.56",
+    "@types/node": "6.0.57",
     "@types/rimraf": "0.0.28",
     "bithound": "1.7.0",
     "chai": "3.5.0",
