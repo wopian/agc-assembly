@@ -13,11 +13,10 @@ let vartwo = 3;
 let timeout = null;
 
 export function activate(context: ExtensionContext) {
-
-
     let activeEditor = window.activeTextEditor;
     let language: string;
-    language = window.activeTextEditor.document.languageId;
+    language = activeEditor.document.languageId;
+
     if (DEBUG) console.log(`AGC Assembly: Detected '${language}' as active language`);
 
     if ((DEBUG) && (language !== ('agc' || 'ags' || 'argus' || 'binsource'))) {
@@ -59,11 +58,11 @@ export function activate(context: ExtensionContext) {
             var KEYWORD_OPERATOR = window.createTextEditorDecorationType(AGC.STYLE.KEYWORD_OPERATOR);
             break;
     }
-/*
-    ┌──────────────────────────────────────────────────────────────────────┐
-    │   Set options                                                        │
-    └──────────────────────────────────────────────────────────────────────┘
-*/
+    /*
+        ┌──────────────────────────────────────────────────────────────────────┐
+        │   Set options                                                        │
+        └──────────────────────────────────────────────────────────────────────┘
+    */
     switch (language) {
         case 'agc':
             updateOptions(AGC.OPTION);
@@ -149,5 +148,5 @@ export function activate(context: ExtensionContext) {
 }
 
 export function deactivate() {
-window.createTextEditorDecorationType(AGC.STYLE.INVALID_DEPRECATED).dispose();
+    // window.createTextEditorDecorationType(AGC.STYLE.INVALID_DEPRECATED).dispose();
 }
