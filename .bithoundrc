@@ -1,7 +1,9 @@
-"test": [
-    "lib/test/**",
-    "test/**"
-],
-"critics": {
-    "lint": { "engine": "tslint" }
+{
+    "test": [
+        "lib/test/**",
+        "test/**"
+    ],
+    "critics": {
+        "lint": { "engine": "tslint" }
+    }
 }
