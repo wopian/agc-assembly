@@ -31,7 +31,7 @@
     "onLanguage:argus",
     "onLanguage:binsource"
   ],
-  "main": "./lib/src/extension",
+  "main": "./out/src/extension",
   "contributes": {
     "languages": [
       {
@@ -43,7 +43,7 @@
         "extensions": [
           ".agc"
         ],
-        "configuration": "./lib/syntax/agc.json"
+        "configuration": "./out/syntax/agc.json"
       },
       {
         "id": "ags",
@@ -55,7 +55,7 @@
           ".ags",
           ".aea"
         ],
-        "configuration": "./lib/syntax/ags.json"
+        "configuration": "./out/syntax/ags.json"
       },
       {
         "id": "argus",
@@ -67,7 +67,7 @@
           ".argus",
           ".mitigus"
         ],
-        "configuration": "./lib/syntax/argus.json"
+        "configuration": "./out/syntax/argus.json"
       },
       {
         "id": "binsource",
@@ -78,29 +78,29 @@
         "extensions": [
           ".binsource"
         ],
-        "configuration": "./lib/syntax/binsource.json"
+        "configuration": "./out/syntax/binsource.json"
       }
     ],
     "grammars": [
       {
         "language": "agc",
         "scopeName": "source.agc_assembly",
-        "path": "./lib/syntax/agc.tmlanguage"
+        "path": "./out/syntax/agc.tmlanguage"
       },
       {
         "language": "ags",
         "scopeName": "source.ags_assembly",
-        "path": "./lib/syntax/ags.tmlanguage"
+        "path": "./out/syntax/ags.tmlanguage"
       },
       {
         "language": "argus",
         "scopeName": "source.mitigus",
-        "path": "./lib/syntax/argus.tmlanguage"
+        "path": "./out/syntax/argus.tmlanguage"
       },
       {
         "language": "binsource",
         "scopeName": "text.binsource",
-        "path": "./lib/syntax/binsource.tmlanguage"
+        "path": "./out/syntax/binsource.tmlanguage"
       }
     ]
   },
@@ -134,6 +134,6 @@
     "compile": "tsc -watch -p ./",
     "test": "node ./node_modules/vscode/bin/test --silent",
     "vscode:install": "node ./node_modules/vscode/bin/install",
-    "b": "tsc -p ./ && node lib/src/build.js"
+    "b": "tsc -p ./ && node out/src/build.js"
   }
 }

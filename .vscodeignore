@@ -1,9 +1,9 @@
 .vscode/**/*
 .vscode-test/**/*
 node_modules/**/*
-lib/test/**/*
-lib/src/build.*
-lib/src/createFile.*
+out/test/**/*
+out/src/build.*
+out/src/createFile.*
 spec/**/*
 src/**/*
 test/**/*

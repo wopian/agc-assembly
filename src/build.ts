@@ -4,13 +4,13 @@ import * as converter from 'converter';
 /*
     Create syntax directory
 */
-mkdir('./lib/syntax', (callback) => {});
+mkdir('./out/syntax', (callback) => {});
 
 const language = (l, i, a) => {
     console.log(`Building ${l[1]} (${i + 1}/${a.length})`);
     let options = { from: 'yml', to: 'plist' };
     let from = createReadStream(`./syntax/${l[0]}.yaml-tmlanguage`);
-    let to = createWriteStream(`./lib/syntax/${l[0]}.tmlanguage`);
+    let to = createWriteStream(`./out/syntax/${l[0]}.tmlanguage`);
     let via = converter(options);
     from.pipe(via).pipe(to);
 };
@@ -19,7 +19,7 @@ const languageOption = (l, i, a) => {
     console.log(`Building ${l[1]} Options (${i + 1}/${a.length})`);
     let options = { from: 'yml', to: 'json' };
     let from = createReadStream(`./syntax/${l[0]}-config.yaml`);
-    let to = createWriteStream(`./lib/syntax/${l[0]}.json`);
+    let to = createWriteStream(`./out/syntax/${l[0]}.json`);
     let via = converter(options);
     from.pipe(via).pipe(to);
 };
