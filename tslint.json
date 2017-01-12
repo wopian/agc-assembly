@@ -1,0 +1,17 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "curly": true,
+        "no-reference": true,
+        "triple-equals": true,
+        "eofline": true,
+        "no-trailing-whitespace": true,
+        "prefer-const": true,
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+        "align": [true, "parameters", "statements"],
+        "no-consecutive-blank-lines": [true, 1],
+        "quotemark": [true, "single"],
+        "ordered-imports": [true, {"import-sources-order": "case-insensitive", "named-imports-order": "case-insensitive"}],
+        "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-module", "check-type"]
+    }
+}

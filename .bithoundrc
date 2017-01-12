@@ -1,6 +1,6 @@
 {
     "test": [
-        "lib/test/**",
+        "out/test/**",
         "test/**"
     ],
     "critics": {
