@@ -36,6 +36,3 @@ install:
 
 script:
     - npm t --silent
-
-after_success:
-    - ./node_modules/bithound/bin/bithound check git@github.com:wopian/agc-assembly.git
