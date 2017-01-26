@@ -7,8 +7,8 @@ import { commands, ExtensionContext, QuickPickItem, QuickPickOptions, TextEditor
 export class FileController {
     public createFile(newFileName): Q.Promise<string> {
         const deferred: Q.Deferred<string> = Q.defer<string>();
-        let dirname: string = path.dirname(newFileName);
-        let fileExists: boolean = fs.existsSync(newFileName);
+        const dirname: string = path.dirname(newFileName);
+        const fileExists: boolean = fs.existsSync(newFileName);
 
         if (!fileExists) {
             mkdirp.sync(dirname);
