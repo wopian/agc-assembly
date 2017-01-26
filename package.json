@@ -130,8 +130,10 @@
     "vscode": "1.0.3"
   },
   "scripts": {
+    "vscode:prepublish": "npm run b",
     "compile": "tsc -watch -p ./",
     "test": "node ./node_modules/vscode/bin/test --silent",
     "vscode:install": "node ./node_modules/vscode/bin/install",
+    "b": "tsc -p ./ && node out/src/build.js"
   }
 }
