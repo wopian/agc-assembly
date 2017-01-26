@@ -7,7 +7,6 @@ import * as rimraf from 'rimraf';
 import { commands, Uri, window, workspace } from 'vscode';
 
 import { FileController } from './../src/createFile';
-import * as extension from './../src/extension';
 
 use(chaiAsPromise);
 

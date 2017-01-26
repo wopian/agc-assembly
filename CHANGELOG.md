@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.0] - 2017-01-26
+### Removed
+- Basic linting capabilities. These have been moved to [AGC Assembly Lint](https://github.com/wopian/agc-assembly-lint).
+
 ## [0.1.4] - 2017-01-03
 ### Added
 - Helper for AGC
