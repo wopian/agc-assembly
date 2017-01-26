@@ -12,8 +12,6 @@ node_js:
     - node
 # Legacy Node; Bump engine requirements & drop when fail
     - 6
-    - 5
-    - 4
 
 sudo: false
 
