@@ -1,17 +1,18 @@
-import { expect, assert, use } from 'chai';
+import { assert, expect, use } from 'chai';
 import * as chaiAsPromise from 'chai-as-promised';
-import { window, workspace, Uri, commands } from 'vscode';
-import { writeFileSync, existsSync, readFileSync } from 'fs';
-import { join, normalize } from 'path';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import * as mkdirp from 'mkdirp';
+import { join, normalize } from 'path';
 import * as rimraf from 'rimraf';
+import { commands, Uri, window, workspace } from 'vscode';
+
 import { FileController } from './../src/createFile';
 import * as extension from './../src/extension';
 
 use(chaiAsPromise);
 
 suite('Chai Tests', () => {
-    let foo = 'bar';
+    const foo = 'bar';
 
     test('expect foo be a string', () => {
         expect(foo).to.be.a('string');
@@ -50,7 +51,7 @@ const files = [
     { fileName: 'NEW_FILE', content: '' }
 ];
 
-languages.forEach(l => {
+languages.forEach((l) => {
 
     suite(`${l.name} Spec`, () => {
         const specPath = join(__dirname, 'spec', '/');
@@ -58,23 +59,23 @@ languages.forEach(l => {
 
         setup(() => {
             mkdirp.sync(specPath);
-            let fileName = `EXISTING_FILE.${l.ext}`;
+            const fileName = `EXISTING_FILE.${l.ext}`;
             writeFileSync(join(specPath, fileName), '# Comment');
         });
 
         teardown(() => {
             if (specPath !== '/') {
-                //rimraf.sync(specPath);
+                // rimraf.sync(specPath);
             }
         });
 
         suite('Create File', () => {
 
-            files.forEach(f => {
+            files.forEach((f) => {
                 test(`create ${f.fileName}.${l.ext}`, () => {
-                    let File = new FileController();
-                    let fileName = `${f.fileName}.${l.ext}`;
-                    let filePath = join(specPath, fileName);
+                    const File = new FileController();
+                    const fileName = `${f.fileName}.${l.ext}`;
+                    const filePath = join(specPath, fileName);
                     File.createFile(filePath).then((returnedFileName) => {
                         expect(returnedFileName).to.equal(filePath);
                         expect(existsSync(filePath)).to.equal('true');
@@ -85,11 +86,11 @@ languages.forEach(l => {
         });
 
         suite('Check File Language', () => {
-            files.forEach(f => {
+            files.forEach((f) => {
                 test(`expect ${f.fileName}.${l.ext} to open as ${l.name}`, () => {
-                    let fileName = `${f.fileName}.${l.ext}`;
-                    let filePath = join(specPath, fileName);
-                    return workspace.openTextDocument(`${normalize(filePath)}`).then(document => {
+                    const fileName = `${f.fileName}.${l.ext}`;
+                    const filePath = join(specPath, fileName);
+                    return workspace.openTextDocument(`${normalize(filePath)}`).then((document) => {
                         return assert.eventually.equal(Promise.resolve(document.languageId), l.lang);
                     });
                 });

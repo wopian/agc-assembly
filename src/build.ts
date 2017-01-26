@@ -1,34 +1,34 @@
-import { mkdir, createReadStream, createWriteStream } from 'fs';
 import * as converter from 'converter';
+import { createReadStream, createWriteStream, mkdir } from 'fs';
 
 /*
     Create syntax directory
 */
-mkdir('./out/syntax', (callback) => {});
+mkdir('./out/syntax', (callback) => { return; });
 
 const language = (l, i, a) => {
     console.log(`Building ${l[1]} (${i + 1}/${a.length})`);
-    let options = { from: 'yml', to: 'plist' };
-    let from = createReadStream(`./syntax/${l[0]}.yaml-tmlanguage`);
-    let to = createWriteStream(`./out/syntax/${l[0]}.tmlanguage`);
-    let via = converter(options);
+    const options = { from: 'yml', to: 'plist' };
+    const from = createReadStream(`./syntax/${l[0]}.yaml-tmlanguage`);
+    const to = createWriteStream(`./out/syntax/${l[0]}.tmlanguage`);
+    const via = converter(options);
     from.pipe(via).pipe(to);
 };
 
 const languageOption = (l, i, a) => {
     console.log(`Building ${l[1]} Options (${i + 1}/${a.length})`);
-    let options = { from: 'yml', to: 'json' };
-    let from = createReadStream(`./syntax/${l[0]}-config.yaml`);
-    let to = createWriteStream(`./out/syntax/${l[0]}.json`);
-    let via = converter(options);
+    const options = { from: 'yml', to: 'json' };
+    const from = createReadStream(`./syntax/${l[0]}-config.yaml`);
+    const to = createWriteStream(`./out/syntax/${l[0]}.json`);
+    const via = converter(options);
     from.pipe(via).pipe(to);
 };
 
 const syntax = [
-    ["agc", "AGC Assembly"],
-    ["ags", "AGS Assembly"],
-    ["argus", "ARGUS H800 Assembly Language"],
-    ["binsource", "Binsource"]
+    ['agc', 'AGC Assembly'],
+    ['ags', 'AGS Assembly'],
+    ['argus', 'ARGUS H800 Assembly Language'],
+    ['binsource', 'Binsource']
 ];
 
 syntax.forEach(language);

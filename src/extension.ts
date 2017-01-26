@@ -1,4 +1,5 @@
-import { window, workspace, StatusBarAlignment, OverviewRulerLane, ExtensionContext, Range } from 'vscode';
+import { ExtensionContext, OverviewRulerLane, Range, StatusBarAlignment, window, workspace } from 'vscode';
+
 import { AGC } from './helpers/agc';
 import { AGS } from './helpers/ags';
 import { ARGUS } from './helpers/argus';
