@@ -1,7 +1,7 @@
 {
   "name": "agc-assembly",
   "displayName": "AGC Assembly",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
   "publisher": "wopian",
   "license": "Apache-2.0",
@@ -24,12 +24,6 @@
   "keywords": [
     "Apollo Guidance Computer",
     "Assembly"
-  ],
-  "activationEvents": [
-    "onLanguage:agc",
-    "onLanguage:ags",
-    "onLanguage:argus",
-    "onLanguage:binsource"
   ],
   "contributes": {
     "languages": [

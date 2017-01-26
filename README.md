@@ -105,38 +105,7 @@ npm t
   - This can temporarily be fixed by just switching tabs.
 
 ## Releases
-### 0.1.4 - 2017-01-03
-#### Added
-- Helper for AGC
-- Options for AGS, Argus and Binsource
-
-### 0.1.3 - 2016-12-30
-#### Changed
-- Rewrote source code in TypeScript
-- Merged `languages` back into `syntax`
-
-#### Added
-- Barebones helper for AGC
-
-### 0.1.2 - 2016-12-29
-#### Fixed
-- Typo causing AGS and Argus to fail
-
-### 0.1.1 - 2016-12-29
-#### Added
-- Missing comment definitions
-
-#### Changed
-- Moved language test files to samples
-- Moved images into `./images`
-- Moved build script into `./src`
-
-#### Fixed
-- Argus language tokenizer failure
-
-### 0.1.0 - 2016-12-29
-#### Changed
-- Reorganised source files
+See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 
 [Travis]:https://img.shields.io/travis/wopian/agc-assembly.svg?style=flat-square
 [GitHub Release]:https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square
