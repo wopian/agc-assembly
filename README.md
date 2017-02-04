@@ -50,7 +50,7 @@ Install AGC Assembly from [VS Code Marketplace][6].
 ## User Settings
 Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source. 
 
-It is advised to add the following to your `settings.json` (`File > Preferences > Settings`):
+It is advised to add the following to your user settings (`File > Preferences > Settings`):
 ```json
 "[agc]": {
     "editor.detectIndentation": false,
