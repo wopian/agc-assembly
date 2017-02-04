@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 - 2017-02-04
+### Changed
+- Suggested settings is now called User Settings
+- User Settings in README uses [language specific settings](https://github.com/Microsoft/vscode/issues/1587) introduced in VSCode 1.9 (Feb 2017)
+
 ## 0.2.1 - 2017-01-26
 ### Fixed
 - Files not being detected as AGC, AGC, Argus or Binsource
