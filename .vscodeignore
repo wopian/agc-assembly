@@ -7,6 +7,12 @@ out/src/createFile.*
 spec/**/*
 src/**/*
 test/**/*
+syntax/**/*
 .gitattributes
 .gitignore
 tsconfig.json
+tslint.json
+package.json
+.travis.yml
+.eslintrc.yaml
+.bithoundrc
