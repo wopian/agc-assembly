@@ -3,6 +3,15 @@
 
 Based on [AGC Assembly][3] for Sublime Text.
 
+## Table of Contents
+1. [Languages](#languages)
+2. [Marketplace](#marketplace)
+3. [Sideloading](#sideloading)
+4. [User Settings](#user-settings)
+5. [Development](#development)
+6. [Known Issues](#known-issues)
+7. [Releases](#releases)
+
 ## Languages
 - `agc` - AGC (Command Module and Lunar Module) assembly language,
 - `ags` - AGS (Lunar Module Abort Guidance System) assembly language,
@@ -38,25 +47,42 @@ Install AGC Assembly from [VS Code Marketplace][6].
 - Navigate to VSIX binary
 - Reload VS Code
 
-## Suggested Settings
-Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source.
+## User Settings
+Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source. 
 
-### AGC, AGS & Binsource
+It is advised to add the following to your `settings.json` (`File > Preferences > Settings`):
 ```json
-{
+"[agc]": {
     "editor.detectIndentation": false,
     "editor.insertSpaces": false,
     "editor.tabCompletion": false,
     "editor.tabSize": 8,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
-    "editor.wordSeparators": " 	",
+    "editor.wordSeparators": "  ",
     "files.trimTrailingWhitespace": true
-}
-```
-### Argus
-```json
-{
+  },
+  "[ags]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.tabCompletion": false,
+    "editor.tabSize": 8,
+    "editor.trimAutoWhitespace": true,
+    "editor.useTabStops": true,
+    "editor.wordSeparators": "  ",
+    "files.trimTrailingWhitespace": true
+  },
+  "[binsource]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.tabCompletion": false,
+    "editor.tabSize": 8,
+    "editor.trimAutoWhitespace": true,
+    "editor.useTabStops": true,
+    "editor.wordSeparators": "  ",
+    "files.trimTrailingWhitespace": true
+  },
+  "[argus]": {
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
@@ -65,7 +91,7 @@ Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "files.trimTrailingWhitespace": true
-}
+  }
 ```
 
 ## Development
