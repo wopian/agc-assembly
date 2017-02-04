@@ -5,12 +5,12 @@ Based on [AGC Assembly][3] for Sublime Text.
 
 ## Table of Contents
 1. [Languages](#languages)
-2. [Marketplace](#marketplace)
-3. [Sideloading](#sideloading)
-4. [User Settings](#user-settings)
-5. [Development](#development)
-6. [Known Issues](#known-issues)
-7. [Releases](#releases)
+1. [Marketplace](#marketplace)
+1. [Sideloading](#sideloading)
+1. [User Settings](#user-settings)
+1. [Development](#development)
+1. [Known Issues](#known-issues)
+1. [Releases](#releases)
 
 ## Languages
 - `agc` - AGC (Command Module and Lunar Module) assembly language,
@@ -127,8 +127,7 @@ npm t
 ```
 
 ## Known Issues
-- Decoration is still applied if the file's language is changed.
-  - This can temporarily be fixed by just switching tabs.
+No known issues
 
 ## Releases
 See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
