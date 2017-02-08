@@ -117,7 +117,7 @@
     "q": "1.4.1",
     "rimraf": "2.5.4",
     "tslint": "4.4.2",
-    "typescript": "2.1.5",
+    "typescript": "2.1.6",
     "vscode": "1.0.3"
   },
   "scripts": {
