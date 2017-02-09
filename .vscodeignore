@@ -14,5 +14,7 @@ tsconfig.json
 tslint.json
 package.json
 .travis.yml
-.eslintrc.yaml
+.eslintrc.yml
 .bithoundrc
+CHANGELOG.md
+*.map

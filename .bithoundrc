@@ -1,9 +1,0 @@
-{
-    "test": [
-        "out/test/**",
-        "test/**"
-    ],
-    "critics": {
-        "lint": { "engine": "tslint" }
-    }
-}
