@@ -4,7 +4,7 @@
   "version": "0.2.2",
   "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
   "publisher": "wopian",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "homepage": "https://github.com/wopian/agc-assembly/blob/master/README.md",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
       {
         "id": "agc",
         "aliases": [
-          "AGC Assembly",
+          "AGC",
           "agc"
         ],
         "extensions": [
@@ -41,7 +41,7 @@
       {
         "id": "ags",
         "aliases": [
-          "AGS Assembly",
+          "AGS",
           "ags"
         ],
         "extensions": [
@@ -53,7 +53,7 @@
       {
         "id": "argus",
         "aliases": [
-          "ARGUS H800 Assembly Language",
+          "ARGUS Honeywell 800",
           "argus"
         ],
         "extensions": [

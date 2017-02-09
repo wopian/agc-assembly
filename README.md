@@ -3,19 +3,18 @@
 
 Based on [AGC Assembly][3] for Sublime Text.
 
-## Table of Contents
+## Contents
 1. [Languages](#languages)
 1. [Marketplace](#marketplace)
 1. [Sideloading](#sideloading)
 1. [User Settings](#user-settings)
 1. [Development](#development)
-1. [Known Issues](#known-issues)
 1. [Releases](#releases)
 
 ## Languages
 - `agc` - AGC (Command Module and Lunar Module) assembly language,
 - `ags` - AGS (Lunar Module Abort Guidance System) assembly language,
-- `argus` - ARGUS H800 Assembly Language,
+- `argus` - ARGUS Honeywell 800 Assembly Language,
 - `binsource` - AGC core rope memory binary source files.
 
 ## Marketplace
@@ -126,8 +125,11 @@ npm run b
 npm t
 ```
 
-## Known Issues
-No known issues
+### Packaging
+```bash
+npm i -g vsce
+vsce package
+```
 
 ## Releases
 See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
