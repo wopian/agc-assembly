@@ -98,8 +98,6 @@ It is advised to add the following to your user settings (`File > Preferences > 
 [![Travis]][8]
 [![David]][9]
 [![DavidDev]][10]
-[![BitHoundDev]][11]
-[![BitHoundCode]][12]
 
 ### Setup
 ```bash
@@ -142,8 +140,6 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [VS Code Rating]:http://vsmarketplacebadge.apphb.com/rating-short/wopian.agc-assembly.svg?style=flat-square
 [David]:https://img.shields.io/david/wopian/agc-assembly.svg?style=flat-square
 [DavidDev]:https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square
-[BitHoundDev]:https://img.shields.io/bithound/devDependencies/github/wopian/agc-assembly.svg?style=flat-square
-[BitHoundCode]:https://img.shields.io/bithound/code/github/wopian/agc-assembly.svg?style=flat-square
 
 [0]:https://code.visualstudio.com/
 [1]:http://www.ibiblio.org/apollo/
@@ -156,5 +152,3 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [8]:https://travis-ci.org/wopian/agc-assembly
 [9]:https://david-dm.org/wopian/agc-assembly
 [10]:https://david-dm.org/wopian/agc-assembly?type=dev
-[11]:https://www.bithound.io/github/wopian/agc-assembly/master/dependencies/npm
-[12]:https://www.bithound.io/github/wopian/agc-assembly
