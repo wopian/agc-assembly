@@ -106,7 +106,7 @@
     "@types/chai": "3.4.34",
     "@types/chai-as-promised": "0.0.29",
     "@types/mkdirp": "0.3.29",
-    "@types/mocha": "2.2.37",
+    "@types/mocha": "2.2.39",
     "@types/node": "7.0.5",
     "@types/rimraf": "0.0.28",
     "chai": "3.5.0",
@@ -117,7 +117,7 @@
     "q": "1.4.1",
     "rimraf": "2.5.4",
     "tslint": "4.4.2",
-    "typescript": "2.1.5",
+    "typescript": "2.1.6",
     "vscode": "1.0.3"
   },
   "scripts": {
