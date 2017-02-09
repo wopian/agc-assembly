@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.3 - 2017-02-09
+### Fixed
+- Some development files were not ignored by package. Reduced package size by 20KB
+
+### Changed
+- Package license changed to MIT. Previous versions were licensed under Apache 2
+- `AGC Assembly` is now called `AGC`
+- `AGS Assembly` is now called `AGS`
+- `ARGUS H800 Assembly Language` is now called `ARGUS Honeywell 800`
+
 ## 0.2.2 - 2017-02-04
 ### Changed
 - Suggested settings is now called User Settings

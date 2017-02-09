@@ -14,7 +14,7 @@ Based on [AGC Assembly][3] for Sublime Text.
 ## Languages
 - `agc` - AGC (Command Module and Lunar Module) assembly language,
 - `ags` - AGS (Lunar Module Abort Guidance System) assembly language,
-- `argus` - ARGUS Honeywell 800 Assembly Language,
+- `argus` - ARGUS Honeywell 800 assembly language,
 - `binsource` - AGC core rope memory binary source files.
 
 ## Marketplace
