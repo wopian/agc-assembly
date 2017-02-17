@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.4] - 2017-02-17
+### Changed
+- Sourced higher quality Apollo Program insignia for package icon
+
 ## [0.2.3] - 2017-02-09
 ### Fixed
 - Some development files were not ignored by package. Reduced package size by 20KB
@@ -72,6 +76,7 @@
 ### Added
 - Initial release of AGC Assembly
 
+[0.2.4]:https://github.com/wopian/agc-assembly/compare/0.2.3...0.2.4
 [0.2.3]:https://github.com/wopian/agc-assembly/compare/0.2.2...0.2.3
 [0.2.2]:https://github.com/wopian/agc-assembly/compare/0.2.1...0.2.2
 [0.2.1]:https://github.com/wopian/agc-assembly/compare/0.2.0...0.2.1
