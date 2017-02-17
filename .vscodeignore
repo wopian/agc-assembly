@@ -15,5 +15,4 @@ tslint.json
 .travis.yml
 .eslintrc.yml
 .bithoundrc
-CHANGELOG.md
 *.map
