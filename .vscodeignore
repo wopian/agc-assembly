@@ -12,7 +12,6 @@ syntax/**/*
 .gitignore
 tsconfig.json
 tslint.json
-package.json
 .travis.yml
 .eslintrc.yml
 .bithoundrc
