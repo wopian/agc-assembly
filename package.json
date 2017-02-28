@@ -118,7 +118,7 @@
     "rimraf": "2.6.1",
     "tslint": "4.4.2",
     "typescript": "2.2.1",
-    "vscode": "1.0.3"
+    "vscode": "1.0.4"
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
