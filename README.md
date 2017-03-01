@@ -1,4 +1,6 @@
 # AGC Assembly
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/wopian/agc-assembly.svg)](https://greenkeeper.io/)
 [Visual Studio Code][0] extension for syntax highlighting [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 Based on [AGC Assembly][3] for Sublime Text.
