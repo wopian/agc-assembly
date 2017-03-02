@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.5] - 2017-03-02
+### Added
+- Configuration defaults (VS Code 1.10)
+  - You no longer need the language settings in User Settings
+
 ## [0.2.4] - 2017-02-17
 ### Changed
 - Sourced higher quality Apollo Program insignia for package icon
@@ -76,6 +81,7 @@
 ### Added
 - Initial release of AGC Assembly
 
+[0.2.5]:https://github.com/wopian/agc-assembly/compare/0.2.4...0.2.5
 [0.2.4]:https://github.com/wopian/agc-assembly/compare/0.2.3...0.2.4
 [0.2.3]:https://github.com/wopian/agc-assembly/compare/0.2.2...0.2.3
 [0.2.2]:https://github.com/wopian/agc-assembly/compare/0.2.1...0.2.2

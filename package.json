@@ -1,7 +1,7 @@
 {
   "name": "agc-assembly",
   "displayName": "AGC Assembly",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Syntax highlighting for Apollo Guidance Computer (AGC) assembly source code",
   "publisher": "wopian",
   "license": "MIT",
