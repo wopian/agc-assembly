@@ -95,12 +95,50 @@
         "scopeName": "text.binsource",
         "path": "./out/syntax/binsource.tmlanguage"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "[agc]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 8,
+        "editor.trimAutoWhitespace": true,
+        "editor.useTabStops": true,
+        "editor.wordSeparators": "  ",
+        "files.trimTrailingWhitespace": true
+      },
+      "[ags]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 8,
+        "editor.trimAutoWhitespace": true,
+        "editor.useTabStops": true,
+        "editor.wordSeparators": "  ",
+        "files.trimTrailingWhitespace": true
+      },
+      "[binsource]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 8,
+        "editor.trimAutoWhitespace": true,
+        "editor.useTabStops": true,
+        "editor.wordSeparators": "  ",
+        "files.trimTrailingWhitespace": true
+      },
+      "[argus]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
+        "editor.tabSize": 8,
+        "editor.trimAutoWhitespace": true,
+        "editor.useTabStops": true,
+        "files.trimTrailingWhitespace": true
+      }
+    }
   },
   "engines": {
-    "vscode": ">=1.9.0",
-    "node": ">=6.0.0",
-    "npm": ">=3.8.6"
+    "vscode": ">=1.10.1",
+    "node": ">=6.5.0",
+    "npm": ">=3.10.3"
   },
   "devDependencies": {
     "@types/chai": "3.4.35",
