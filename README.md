@@ -99,6 +99,7 @@ It is advised to add the following to your user settings (`File > Preferences > 
 ## Development
 
 [![Travis]][8]
+[![AppVeyor]][11]
 [![David]][9]
 [![DavidDev]][10]
 
@@ -135,7 +136,7 @@ vsce package
 ## Releases
 See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 
-[Travis]:https://img.shields.io/travis/wopian/agc-assembly.svg?style=flat-square
+[Travis]:https://img.shields.io/travis/wopian/agc-assembly.svg?style=flat-square&label=linux%20%26%20macOS
 [GitHub Release]:https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square
 [GitHub All Releases]:https://img.shields.io/github/downloads/wopian/agc-assembly/total.svg?style=flat-square
 [VS Code Version]:http://vsmarketplacebadge.apphb.com/version-short/wopian.agc-assembly.svg?style=flat-square
@@ -143,6 +144,7 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [VS Code Rating]:http://vsmarketplacebadge.apphb.com/rating-short/wopian.agc-assembly.svg?style=flat-square
 [David]:https://img.shields.io/david/wopian/agc-assembly.svg?style=flat-square
 [DavidDev]:https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square
+[AppVeyor]:https://img.shields.io/appveyor/ci/wopian/agc-assembly.svg?style=flat-square&label=windows
 
 [0]:https://code.visualstudio.com/
 [1]:http://www.ibiblio.org/apollo/
@@ -155,3 +157,4 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [8]:https://travis-ci.org/wopian/agc-assembly
 [9]:https://david-dm.org/wopian/agc-assembly
 [10]:https://david-dm.org/wopian/agc-assembly?type=dev
+[11]:https://ci.appveyor.com/project/wopian/agc-assembly

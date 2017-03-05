@@ -1,0 +1,17 @@
+environment:
+  # Latest node version
+  nodejs_version: ""
+  # Legacy; Deprecate when VS Code updates to Node 7+
+  nodejs_version: "6"
+platform:
+  - x64
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - npm update
+  - npm prune
+  - npm i
+  - npm run vscode:install
+  - npm run vscode:prepublish
+test_script:
+  - npm t --silent
+build: off
