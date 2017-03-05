@@ -7,7 +7,6 @@ Based on [AGC Assembly][3] for Sublime Text.
 1. [Languages](#languages)
 1. [Marketplace](#marketplace)
 1. [Sideloading](#sideloading)
-1. [User Settings](#user-settings)
 1. [Development](#development)
 1. [Releases](#releases)
 
@@ -45,56 +44,6 @@ Install AGC Assembly from [VS Code Marketplace][6].
 - Input `install vsix`
 - Navigate to VSIX binary
 - Reload VS Code
-
-## User Settings
-Current [VirtualAGC][1] project conventions are to use hard tabs every 8 columns when entering source. 
-
-**Note:** As of AGC Assembly 0.2.5 and VS Code 1.10.1, the settings below are automatically set by
-the extension.
-
-It is advised to add the following to your user settings (`File > Preferences > Settings`):
-```json
-"[agc]": {
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false,
-    "editor.tabCompletion": false,
-    "editor.tabSize": 8,
-    "editor.trimAutoWhitespace": true,
-    "editor.useTabStops": true,
-    "editor.wordSeparators": "  ",
-    "files.trimTrailingWhitespace": true
-  },
-  "[ags]": {
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false,
-    "editor.tabCompletion": false,
-    "editor.tabSize": 8,
-    "editor.trimAutoWhitespace": true,
-    "editor.useTabStops": true,
-    "editor.wordSeparators": "  ",
-    "files.trimTrailingWhitespace": true
-  },
-  "[binsource]": {
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false,
-    "editor.tabCompletion": false,
-    "editor.tabSize": 8,
-    "editor.trimAutoWhitespace": true,
-    "editor.useTabStops": true,
-    "editor.wordSeparators": "  ",
-    "files.trimTrailingWhitespace": true
-  },
-  "[argus]": {
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
-    "editor.tabCompletion": false,
-    "editor.tabSize": 8,
-    "editor.trimAutoWhitespace": true,
-    "editor.useTabStops": true,
-    "files.trimTrailingWhitespace": true
-  }
-```
 
 ## Development
 
