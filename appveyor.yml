@@ -1,8 +1,9 @@
 environment:
-  # Latest node version
-  nodejs_version: ""
-  # Legacy; Deprecate when VS Code updates to Node 7+
-  nodejs_version: "6"
+  matrix:
+    # Latest node version
+    nodejs_version: ""
+    # Legacy; Deprecate when VS Code updates to Node 7+
+    nodejs_version: "6"
 platform:
   - x64
 install:
