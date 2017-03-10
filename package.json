@@ -142,7 +142,7 @@
   },
   "devDependencies": {
     "@types/chai": "3.4.35",
-    "@types/chai-as-promised": "0.0.29",
+    "@types/chai-as-promised": "0.0.30",
     "@types/mkdirp": "0.3.29",
     "@types/mocha": "2.2.39",
     "@types/node": "7.0.8",
