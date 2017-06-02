@@ -7,6 +7,7 @@ cache:
     - node_modules
 node_js:
   - node
+  - 7
   # Legacy; Deprecate when VS Code updates to Node 7+
   - 6
 sudo: false
