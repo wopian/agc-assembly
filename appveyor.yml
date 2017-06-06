@@ -9,7 +9,7 @@ platform:
   - x64
   - x86
 cache:
-  #- node_modules
+  - node_modules
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - npm update
