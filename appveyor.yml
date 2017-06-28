@@ -1,6 +1,6 @@
 environment:
   allow_failures:
-    - nodejs_version: ""
+    - nodejs_version: 8
   matrix:
     # Latest node version
     - nodejs_version: ""
