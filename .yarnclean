@@ -1,6 +1,5 @@
-# test directories
+# test
 __tests__
-test
 tests
 powered-test
 benchmarks

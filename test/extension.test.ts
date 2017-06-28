@@ -10,31 +10,6 @@ import { FileController } from './../src/createFile';
 
 use(chaiAsPromise);
 
-suite('Chai Tests', () => {
-    const foo = 'bar';
-
-    test('expect foo be a string', () => {
-        expect(foo).to.be.a('string');
-    });
-
-    test('expect foo to equal bar', () => {
-        expect(foo).to.equal('bar');
-    });
-
-    test('expect foo to equal bar with promise', () => {
-        return assert.eventually.equal(Promise.resolve(foo), 'bar');
-    });
-
-    test('expect foo to have length 3', () => {
-        expect(foo).to.have.length(3);
-    });
-
-    test('expect foo to be a string length 3', () => {
-        expect(foo).to.be.a('string')
-            .with.length(3);
-    });
-});
-
 const languages = [
     // { name: 'Foo Assembly', ext: [ 'foo', 'bar' ] },
     { name: 'AGC Assembly', ext: 'agc', lang: 'agc' },

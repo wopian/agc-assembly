@@ -165,8 +165,8 @@
     "q": "~1.5.0",
     "rimraf": "~2.6.1",
     "tslint": "~5.4.3",
-    "typescript": "~2.3.1",
-    "vscode": "~1.0.6"
+    "typescript": "~2.4.1",
+    "vscode": "~1.1.0"
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
