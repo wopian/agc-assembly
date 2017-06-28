@@ -6,14 +6,10 @@ cache:
   directories:
     - node_modules
 node_js:
-  - node
   - 7
-  # Legacy; Deprecate when VS Code updates to Node 7+
-  - 6
+  - 7.4 # VSCode 1.13.1
 sudo: false
 matrix:
-  allow_failures:
-  - node: node
   fast_finish: true
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
