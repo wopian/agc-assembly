@@ -6,14 +6,12 @@ platform:
   - x64
   - x86
 cache:
-  #- node_modules
+  - "%LOCALAPPDATA%\\Yarn"
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
-  - npm update
-  - npm prune
-  - npm i
-  - npm run vscode:install
-  - npm run vscode:prepublish
+  - yarn upgrade
+  - yarn run vscode:install
+  - yarn run vscode:prepublish
 test_script:
   - npm t --silent
 build: off

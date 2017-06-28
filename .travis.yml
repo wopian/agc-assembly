@@ -17,13 +17,11 @@ before_install:
       sh -e /etc/init.d/xvfb start;
       sleep 3;
     fi
-  - npm update
-  - npm prune
 install:
-  - travis_retry npm i
-  - npm run vscode:install
-  - npm run vscode:prepublish
+  - travis_retry yarn upgrade
+  - yarn run vscode:install
+  - yarn run vscode:prepublish
 script:
-  - npm t --silent
+  - yarn test --silent
 notifications:
   email: false

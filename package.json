@@ -127,7 +127,17 @@
       "[argus]": {
         "editor.detectIndentation": false,
         "editor.insertSpaces": true,
-        "editor.rulers": [1, 8, 19, 32, 46, 60, 75, 80, 120],
+        "editor.rulers": [
+          1,
+          8,
+          19,
+          32,
+          46,
+          60,
+          75,
+          80,
+          120
+        ],
         "editor.tabSize": 8,
         "editor.trimAutoWhitespace": true,
         "editor.useTabStops": true,
@@ -136,34 +146,34 @@
     }
   },
   "engines": {
-    "vscode": ">=1.10.1",
-    "node": ">=6.5.0",
-    "npm": ">=3.10.3"
+    "vscode": ">=1.13.1",
+    "node": ">=7.4.0",
+    "npm": ">=4.0.5"
   },
   "devDependencies": {
-    "@types/chai": "~4.0.0",
-    "@types/chai-as-promised": "~0.0.30",
+    "@types/chai": "~4.0.1",
+    "@types/chai-as-promised": "~0.0.31",
     "@types/mkdirp": "~0.3.29",
-    "@types/mocha": "~2.2.40",
-    "@types/node": "~8.0.0",
+    "@types/mocha": "~2.2.41",
+    "@types/node": "~8.0.4",
     "@types/rimraf": "~0.0.28",
-    "chai": "~4.0.1",
+    "chai": "~4.0.2",
     "chai-as-promised": "~7.0.0",
     "converter": "~0.0.5",
     "mkdirp": "~0.5.1",
-    "mocha": "~3.4.1",
+    "mocha": "~3.4.2",
     "q": "~1.5.0",
     "rimraf": "~2.6.1",
-    "tslint": "~5.4.1",
+    "tslint": "~5.4.3",
     "typescript": "~2.3.1",
     "vscode": "~1.0.6"
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "vscode:prepublish": "npm run b",
+    "vscode:prepublish": "yarn run build",
     "compile": "tsc -watch -p ./",
     "test": "node ./node_modules/vscode/bin/test --silent",
     "vscode:install": "node ./node_modules/vscode/bin/install",
-    "b": "tsc -p ./ && node out/src/build.js"
+    "build": "tsc -p ./ && node out/src/build.js"
   }
 }
