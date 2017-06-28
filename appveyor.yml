@@ -1,12 +1,13 @@
 environment:
-  allow_failures:
-    - nodejs_version: 8
   matrix:
     # Latest node version
     - nodejs_version: ""
     - nodejs_version: "7"
     # Legacy; Deprecate when VS Code updates to Node 7+
     - nodejs_version: "6"
+matrix:
+  allow_failures:
+    - nodejs_version: ""
 platform:
   - x64
   - x86
