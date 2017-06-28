@@ -12,6 +12,8 @@ node_js:
   - 6
 sudo: false
 matrix:
+  allow_failures:
+  - node: node
   fast_finish: true
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
