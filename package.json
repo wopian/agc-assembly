@@ -153,7 +153,7 @@
   "devDependencies": {
     "@types/chai": "~4.0.1",
     "@types/chai-as-promised": "~0.0.31",
-    "@types/mkdirp": "~0.3.29",
+    "@types/mkdirp": "~0.5.0",
     "@types/mocha": "~2.2.41",
     "@types/node": "~8.0.4",
     "@types/rimraf": "~0.0.28",
