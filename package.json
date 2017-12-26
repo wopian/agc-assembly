@@ -192,7 +192,8 @@
       ":ignoreUnstable",
       ":updateNotScheduled",
       ":label(dependencies)",
-      ":timezone(Europe/London)"
+      ":timezone(Europe/London)",
+      ":assignee(wopian)"
     ],
     "prTitle": "update {{depName}} to {{newVersion}}",
     "commitMessage": "update {{depName}} to {{newVersion}}"
