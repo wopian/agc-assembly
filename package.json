@@ -192,8 +192,7 @@
       ":ignoreUnstable",
       ":updateNotScheduled",
       ":label(dependencies)",
-      ":timezone(Europe/London)",
-      "schedule:weekly"
+      ":timezone(Europe/London)"
     ],
     "prTitle": "update {{depName}} to {{newVersion}}",
     "commitMessage": "update {{depName}} to {{newVersion}}"
