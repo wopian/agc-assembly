@@ -175,5 +175,27 @@
     "test": "node ./node_modules/vscode/bin/test --silent",
     "vscode:install": "node ./node_modules/vscode/bin/install",
     "build": "tsc -p ./ && node out/src/build.js"
+  },
+  "renovate": {
+    "extends": [
+      ":npm",
+      ":preserveSemverRanges",
+      ":combinePatchMinorReleases",
+      ":renovatePrefix",
+      ":semanticCommits",
+      ":semanticPrefixChore",
+      ":rebaseStalePrs",
+      ":unpublishSafe",
+      ":prNotPending",
+      ":automergeDisabled",
+      ":maintainLockFilesMonthly",
+      ":ignoreUnstable",
+      ":updateNotScheduled",
+      ":label(dependencies)",
+      ":timezone(Europe/London)",
+      "schedule:weekly"
+    ],
+    "prTitle": "update {{depName}} to {{newVersion}}",
+    "commitMessage": "update {{depName}} to {{newVersion}}"
   }
 }
