@@ -10,9 +10,9 @@ cache:
   - "%LOCALAPPDATA%\\Yarn"
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
-  - yarn upgrade
-  - yarn run vscode:install
-  - yarn run vscode:prepublish
+  - yarn
+  - yarn vscode:install
+  - yarn vscode:prepublish
 test_script:
   - npm t --silent
 build: off
