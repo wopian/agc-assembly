@@ -6,8 +6,6 @@ cache:
   directories:
   - node_modules
 node_js:
-- node
-- 8
 - 7.9.0 # VSCode 1.19.1
 sudo: false
 matrix:
