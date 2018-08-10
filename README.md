@@ -1,4 +1,15 @@
 # AGC Assembly
+
+[![VS Code Version]][6]
+[![VS Code Installs]][6]
+[![VS Code Rating]][6]
+[![donate badge]][donate]
+
+[![Travis]][8]
+[![AppVeyor]][11]
+[![David]][9]
+[![DavidDev]][10]
+
 [Visual Studio Code][0] extension for syntax highlighting [Apollo Guidance Computer (AGC)][1] assembly [source code][2].
 
 Based on [AGC Assembly][3] for Sublime Text.
@@ -17,9 +28,6 @@ Based on [AGC Assembly][3] for Sublime Text.
 - `binsource` - AGC core rope memory binary source files.
 
 ## Marketplace
-[![VS Code Version]][6]
-[![VS Code Installs]][6]
-[![VS Code Rating]][6]
 
 Install AGC Assembly from [VS Code Marketplace][6].
 - Launch VS Code Quick Open (<kbd>Ctrl</kbd>+<kbd>P</kbd>)
@@ -27,8 +35,6 @@ Install AGC Assembly from [VS Code Marketplace][6].
 - Reload VS Code
 
 ## Sideloading
-[![GitHub Release]][7]
-[![Github All Releases]][7]
 
 ### From Source
 - Download the [latest release][7]
@@ -46,11 +52,6 @@ Install AGC Assembly from [VS Code Marketplace][6].
 - Reload VS Code
 
 ## Development
-
-[![Travis]][8]
-[![AppVeyor]][11]
-[![David]][9]
-[![DavidDev]][10]
 
 ### Setup
 ```bash
@@ -85,15 +86,13 @@ vsce package
 ## Releases
 See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 
-[Travis]:https://img.shields.io/travis/wopian/agc-assembly.svg?style=flat-square&label=linux%20%26%20macOS
-[GitHub Release]:https://img.shields.io/github/release/wopian/agc-assembly.svg?style=flat-square
-[GitHub All Releases]:https://img.shields.io/github/downloads/wopian/agc-assembly/total.svg?style=flat-square
+[Travis]:https://flat.badgen.net/travis/wopian/agc-assembly
 [VS Code Version]:http://vsmarketplacebadge.apphb.com/version-short/wopian.agc-assembly.svg?style=flat-square
 [VS Code Installs]:http://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square
 [VS Code Rating]:http://vsmarketplacebadge.apphb.com/rating-short/wopian.agc-assembly.svg?style=flat-square
-[David]:https://img.shields.io/david/wopian/agc-assembly.svg?style=flat-square
-[DavidDev]:https://img.shields.io/david/dev/wopian/agc-assembly.svg?style=flat-square
-[AppVeyor]:https://img.shields.io/appveyor/ci/wopian/agc-assembly.svg?style=flat-square&label=windows
+[David]:https://flat.badgen.net/david/dep/wopian/agc-assembly
+[DavidDev]:https://flat.badgen.net/david/dev/wopian/agc-assembly
+[AppVeyor]:https://flat.badgen.net/appveyor/ci/wopian/agc-assembly
 
 [0]:https://code.visualstudio.com/
 [1]:http://www.ibiblio.org/apollo/
@@ -107,3 +106,6 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [9]:https://david-dm.org/wopian/agc-assembly
 [10]:https://david-dm.org/wopian/agc-assembly?type=dev
 [11]:https://ci.appveyor.com/project/wopian/agc-assembly
+
+[donate]:https://paypal.me/wopian
+[donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
