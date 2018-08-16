@@ -19,7 +19,7 @@
   },
   "icon": "img/icon.png",
   "categories": [
-    "Languages"
+    "Programming Languages"
   ],
   "keywords": [
     "Apollo Guidance Computer",
@@ -147,8 +147,8 @@
   },
   "engines": {
     "vscode": ">=1.13.1",
-    "node": ">=7.4.0",
-    "npm": ">=4.0.5"
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
   },
   "devDependencies": {
     "@types/chai": "~4.1.0",
