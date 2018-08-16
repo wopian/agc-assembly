@@ -87,9 +87,9 @@ vsce package
 See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 
 [Travis]:https://flat.badgen.net/travis/wopian/agc-assembly
-[VS Code Version]:http://vsmarketplacebadge.apphb.com/version-short/wopian.agc-assembly.svg?style=flat-square
-[VS Code Installs]:http://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square
-[VS Code Rating]:http://vsmarketplacebadge.apphb.com/rating-short/wopian.agc-assembly.svg?style=flat-square
+[VS Code Version]:https://vsmarketplacebadge.apphb.com/version-short/wopian.agc-assembly.svg?style=flat-square
+[VS Code Installs]:https://vsmarketplacebadge.apphb.com/installs/wopian.agc-assembly.svg?style=flat-square
+[VS Code Rating]:https://vsmarketplacebadge.apphb.com/rating-short/wopian.agc-assembly.svg?style=flat-square
 [David]:https://flat.badgen.net/david/dep/wopian/agc-assembly
 [DavidDev]:https://flat.badgen.net/david/dev/wopian/agc-assembly
 [AppVeyor]:https://flat.badgen.net/appveyor/ci/wopian/agc-assembly
