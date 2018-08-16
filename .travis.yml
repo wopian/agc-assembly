@@ -6,7 +6,8 @@ cache:
   directories:
   - node_modules
 node_js:
-- 7.9.0 # VSCode 1.19.1
+- node
+- 8.9.3 # VSCode 1.26.0
 sudo: false
 matrix:
   fast_finish: true
@@ -21,6 +22,6 @@ install:
 - yarn vscode:install
 - yarn vscode:prepublish
 script:
-- yarn test --silent
+- yarn test
 notifications:
   email: false

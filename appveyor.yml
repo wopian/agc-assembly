@@ -1,6 +1,7 @@
 environment:
   matrix:
-    - nodejs_version: "7.9.0"
+  - nodejs_version: ""
+  - nodejs_version: "8.9.3"
 platform:
   - x64
 cache:
@@ -11,5 +12,5 @@ install:
   - yarn vscode:install
   - yarn vscode:prepublish
 test_script:
-  - npm t --silent
+  - yarn test
 build: off
