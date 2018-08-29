@@ -2,7 +2,6 @@ import * as fs from 'fs';
 import * as mkdirp from 'mkdirp';
 import * as path from 'path';
 import * as Q from 'q';
-import { commands, ExtensionContext, QuickPickItem, QuickPickOptions, TextEditor, window, workspace } from 'vscode';
 
 export class FileController {
     public createFile(newFileName): Q.Promise<string> {
