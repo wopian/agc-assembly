@@ -13,6 +13,9 @@ node_js:
 sudo: false
 matrix:
   fast_finish: true
+env:
+  global:
+    - YARN_GPG=no # https://travis-ci.community/t/build-doesnt-finish-after-completing-tests/288
 before_install:
 - if [ $TRAVIS_OS_NAME == "linux" ]; then
     export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
