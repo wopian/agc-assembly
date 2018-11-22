@@ -1,7 +1,9 @@
 language: node_js
 os:
 - linux
-#- osx
+- osx
+- windows
+dist: xenial
 cache:
   directories:
   - node_modules
