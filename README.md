@@ -6,7 +6,6 @@
 [![donate badge]][donate]
 
 [![Travis]][8]
-[![AppVeyor]][11]
 [![David]][9]
 [![DavidDev]][10]
 
@@ -105,7 +104,6 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [8]:https://travis-ci.org/wopian/agc-assembly
 [9]:https://david-dm.org/wopian/agc-assembly
 [10]:https://david-dm.org/wopian/agc-assembly?type=dev
-[11]:https://ci.appveyor.com/project/wopian/agc-assembly
 
 [donate]:https://paypal.me/wopian
 [donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
