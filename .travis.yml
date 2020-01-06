@@ -1,6 +1,6 @@
 language: node_js
 os:
-- linux
+#- linux # VSCode tests fail without an error message/stack trace
 - osx
 - windows
 dist: xenial
