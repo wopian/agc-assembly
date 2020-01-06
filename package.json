@@ -172,7 +172,7 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "vscode:prepublish": "yarn run build",
     "compile": "tsc -watch -p ./",
-    "test": "node ./node_modules/vscode/bin/test --silent",
+    "test": "node ./node_modules/vscode/bin/test",
     "vscode:install": "node ./node_modules/vscode/bin/install",
     "build": "tsc -p ./ && node out/src/build.js"
   },
