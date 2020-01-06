@@ -9,7 +9,7 @@ cache:
   - node_modules
 node_js:
 - node
-- 8.9.3 # VSCode 1.26.0
+- 12.4.0 # VSCode 1.41.1
 sudo: false
 matrix:
   fast_finish: true
