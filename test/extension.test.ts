@@ -52,7 +52,7 @@ languages.forEach((l) => {
                     const filePath = join(specPath, fileName);
                     File.createFile(filePath).then((returnedFileName) => {
                         expect(returnedFileName).to.equal(filePath);
-                        expect(existsSync(filePath)).to.equal('true');
+                        expect(existsSync(filePath)).to.equal(true);
                         expect(readFileSync(filePath)).to.equal(f.content);
                     });
                 });
