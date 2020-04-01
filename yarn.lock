@@ -8,12 +8,16 @@
   dependencies:
     "@babel/highlight" "^7.8.3"
 
+"@babel/helper-validator-identifier@^7.9.0":
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.9.0.tgz#ad53562a7fc29b3b9a91bbf7d10397fd146346ed"
+
 "@babel/highlight@^7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.8.3.tgz#28f173d04223eaaa59bc1d439a3836e6d1265797"
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.9.0.tgz#4e9b45ccb82b79607271b2979ad82c7b68163079"
   dependencies:
+    "@babel/helper-validator-identifier" "^7.9.0"
     chalk "^2.0.0"
-    esutils "^2.0.2"
     js-tokens "^4.0.0"
 
 "@types/chai-as-promised@~7.1.0":
@@ -23,8 +27,8 @@
     "@types/chai" "*"
 
 "@types/chai@*", "@types/chai@~4.2.0":
-  version "4.2.9"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.9.tgz#194332625ed2ae914aef00b8d5ca3b77e7924cc6"
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.2.11.tgz#d3614d6c5f500142358e6ed24e1bf16657536c50"
 
 "@types/events@*":
   version "3.0.0"
@@ -49,20 +53,16 @@
     "@types/node" "*"
 
 "@types/mocha@~7.0.0":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-7.0.1.tgz#5d7ec2a789a1f77c59b7ad071b9d50bf1abbfc9e"
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-7.0.2.tgz#b17f16cf933597e10d6d78eae3251e692ce8b0ce"
 
-"@types/node@*":
-  version "13.7.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.7.tgz#1628e6461ba8cc9b53196dfeaeec7b07fa6eea99"
-
-"@types/node@~13.9.0":
-  version "13.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.0.tgz#5b6ee7a77faacddd7de719017d0bc12f52f81589"
+"@types/node@*", "@types/node@~13.9.0":
+  version "13.9.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.8.tgz#09976420fc80a7a00bf40680c63815ed8c7616f4"
 
 "@types/rimraf@~2.0.0":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@types/rimraf/-/rimraf-2.0.3.tgz#0199a46af106729ba14213fda7b981278d8c84f2"
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@types/rimraf/-/rimraf-2.0.4.tgz#403887b0b53c6100a6c35d2ab24f6ccc042fec46"
   dependencies:
     "@types/glob" "*"
     "@types/node" "*"
@@ -348,9 +348,9 @@ emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
 
-es-abstract@^1.17.0-next.1:
-  version "1.17.4"
-  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.17.4.tgz#e3aedf19706b20e7c2594c35fc0d57605a79e184"
+es-abstract@^1.17.0-next.1, es-abstract@^1.17.5:
+  version "1.17.5"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.17.5.tgz#d8c9d1d66c8981fb9200e2251d799eee92774ae9"
   dependencies:
     es-to-primitive "^1.2.1"
     function-bind "^1.1.1"
@@ -389,10 +389,6 @@ escape-string-regexp@1.0.5, escape-string-regexp@^1.0.5:
 esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
-
-esutils@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
 
 extend@~3.0.2:
   version "3.0.2"
@@ -471,8 +467,8 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 glob-parent@~5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.0.tgz#5f4c1d1e748d30cd73ad2944b3577a81b081e8c2"
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
   dependencies:
     is-glob "^4.0.1"
 
@@ -743,11 +739,27 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-mkdirp@0.5.1, mkdirp@^0.5.1:
+minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+
+mkdirp@0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+mkdirp@0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.3.tgz#5a514b7179259287952881e94410ec5465659f8c"
+  dependencies:
+    minimist "^1.2.5"
+
+mkdirp@^0.5.1:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.4.tgz#fd01504a6797ec5c9be81ff43d204961ed64a512"
+  dependencies:
+    minimist "^1.2.5"
 
 mkdirp@~1.0.0:
   version "1.0.3"
@@ -770,8 +782,8 @@ mocha@^5.2.0:
     supports-color "5.4.0"
 
 mocha@~7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-7.1.0.tgz#c784f579ad0904d29229ad6cb1e2514e4db7d249"
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-7.1.1.tgz#89fbb30d09429845b1bb893a830bf5771049a441"
   dependencies:
     ansi-colors "3.2.3"
     browser-stdout "1.3.1"
@@ -786,7 +798,7 @@ mocha@~7.1.0:
     js-yaml "3.13.1"
     log-symbols "3.0.0"
     minimatch "3.0.4"
-    mkdirp "0.5.1"
+    mkdirp "0.5.3"
     ms "2.1.1"
     node-environment-flags "1.0.6"
     object.assign "4.1.0"
@@ -794,8 +806,8 @@ mocha@~7.1.0:
     supports-color "6.0.0"
     which "1.3.1"
     wide-align "1.1.3"
-    yargs "13.3.0"
-    yargs-parser "13.1.1"
+    yargs "13.3.2"
+    yargs-parser "13.1.2"
     yargs-unparser "1.6.0"
 
 ms@2.0.0:
@@ -892,8 +904,8 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
 picomatch@^2.0.4:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.1.tgz#21bac888b6ed8601f831ce7816e335bc779f0a4a"
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
 
 plist@~0.4.3:
   version "0.4.3"
@@ -907,8 +919,8 @@ pretty-data@~0.40.0:
   resolved "https://registry.yarnpkg.com/pretty-data/-/pretty-data-0.40.0.tgz#572aa8ea23467467ab94b6b5266a6fd9c8fddd72"
 
 psl@^1.1.28:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.7.0.tgz#f1c4c47a8ef97167dea5d6bbf4816d736e884a3c"
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
 
 punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
@@ -1049,19 +1061,35 @@ string-width@^3.0.0, string-width@^3.1.0:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^5.1.0"
 
-string.prototype.trimleft@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/string.prototype.trimleft/-/string.prototype.trimleft-2.1.1.tgz#9bdb8ac6abd6d602b17a4ed321870d2f8dcefc74"
+string.prototype.trimend@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimend/-/string.prototype.trimend-1.0.0.tgz#ee497fd29768646d84be2c9b819e292439614373"
   dependencies:
     define-properties "^1.1.3"
-    function-bind "^1.1.1"
+    es-abstract "^1.17.5"
+
+string.prototype.trimleft@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimleft/-/string.prototype.trimleft-2.1.2.tgz#4408aa2e5d6ddd0c9a80739b087fbc067c03b3cc"
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.17.5"
+    string.prototype.trimstart "^1.0.0"
 
 string.prototype.trimright@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/string.prototype.trimright/-/string.prototype.trimright-2.1.1.tgz#440314b15996c866ce8a0341894d45186200c5d9"
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimright/-/string.prototype.trimright-2.1.2.tgz#c76f1cef30f21bbad8afeb8db1511496cfb0f2a3"
   dependencies:
     define-properties "^1.1.3"
-    function-bind "^1.1.1"
+    es-abstract "^1.17.5"
+    string.prototype.trimend "^1.0.0"
+
+string.prototype.trimstart@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimstart/-/string.prototype.trimstart-1.0.0.tgz#afe596a7ce9de905496919406c9734845f01a2f2"
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.17.5"
 
 strip-ansi@^4.0.0:
   version "4.0.0"
@@ -1266,9 +1294,9 @@ yamljs@~0.1.4:
     argparse "~0.1.4"
     glob "~3.1.11"
 
-yargs-parser@13.1.1, yargs-parser@^13.1.1:
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.1.1.tgz#d26058532aa06d365fe091f6a1fc06b2f7e5eca0"
+yargs-parser@13.1.2, yargs-parser@^13.1.2:
+  version "13.1.2"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.1.2.tgz#130f09702ebaeef2650d54ce6e3e5706f7a4fb38"
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
@@ -1281,9 +1309,9 @@ yargs-unparser@1.6.0:
     lodash "^4.17.15"
     yargs "^13.3.0"
 
-yargs@13.3.0, yargs@^13.3.0:
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.0.tgz#4c657a55e07e5f2cf947f8a366567c04a0dedc83"
+yargs@13.3.2, yargs@^13.3.0:
+  version "13.3.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
   dependencies:
     cliui "^5.0.0"
     find-up "^3.0.0"
@@ -1294,4 +1322,4 @@ yargs@13.3.0, yargs@^13.3.0:
     string-width "^3.0.0"
     which-module "^2.0.0"
     y18n "^4.0.0"
-    yargs-parser "^13.1.1"
+    yargs-parser "^13.1.2"
