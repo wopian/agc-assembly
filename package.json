@@ -156,7 +156,7 @@
     "@types/mkdirp": "~1.0.0",
     "@types/mocha": "~7.0.0",
     "@types/node": "~13.11.0",
-    "@types/rimraf": "~2.0.0",
+    "@types/rimraf": "~3.0.0",
     "chai": "~4.2.0",
     "chai-as-promised": "~7.1.0",
     "converter": "~0.0.5",
