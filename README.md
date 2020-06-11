@@ -3,7 +3,6 @@
 [![VS Code Version]][6]
 [![VS Code Installs]][6]
 [![VS Code Rating]][6]
-[![donate badge]][donate]
 
 [![Travis]][8]
 [![David]][9]
@@ -104,6 +103,3 @@ See [CHANGELOG](https://github.com/wopian/agc-assembly/blob/master/CHANGELOG.md)
 [8]:https://travis-ci.org/wopian/agc-assembly
 [9]:https://david-dm.org/wopian/agc-assembly
 [10]:https://david-dm.org/wopian/agc-assembly?type=dev
-
-[donate]:https://paypal.me/wopian
-[donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
