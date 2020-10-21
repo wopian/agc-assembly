@@ -155,7 +155,7 @@
     "@types/chai-as-promised": "~7.1.0",
     "@types/mkdirp": "~1.0.0",
     "@types/mocha": "~8.0.0",
-    "@types/node": "~14.11.0",
+    "@types/node": "~14.14.0",
     "@types/rimraf": "~3.0.0",
     "chai": "~4.2.0",
     "chai-as-promised": "~7.1.0",
