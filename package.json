@@ -160,7 +160,7 @@
     "chai": "~4.3.0",
     "chai-as-promised": "~7.1.0",
     "converter": "~0.0.5",
-    "mkdirp": "~1.0.0",
+    "mkdirp": "~2.0.0",
     "mocha": "~10.2.0",
     "q": "~1.5.0",
     "rimraf": "~4.0.0",
