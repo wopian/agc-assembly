@@ -41,9 +41,9 @@
     "@types/chai" "*"
 
 "@types/chai@*", "@types/chai@~4.3.0":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.4.tgz#e913e8175db8307d78b4e8fa690408ba6b65dee4"
-  integrity sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.5.tgz#ae69bcbb1bebb68c4ac0b11e9d8ed04526b3562b"
+  integrity sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==
 
 "@types/glob@*":
   version "8.1.0"
@@ -71,9 +71,9 @@
   integrity sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==
 
 "@types/node@*", "@types/node@~18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.0.tgz#4668bc392bb6938637b47e98b1f2ed5426f33316"
-  integrity sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==
+  version "18.16.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.3.tgz#6bda7819aae6ea0b386ebc5b24bdf602f1b42b01"
+  integrity sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==
 
 "@types/rimraf@~3.0.0":
   version "3.0.2"
@@ -263,13 +263,22 @@ chokidar@3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-cliui@^7.0.2, cliui@^7.0.4:
+cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
   integrity sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==
   dependencies:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
+cliui@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-8.0.1.tgz#0c04b075db02cbfe60dc8e6cf2f5486b1a3608aa"
+  integrity sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
 color-convert@^1.9.0:
@@ -678,11 +687,11 @@ isexe@^2.0.0:
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
 jackspeak@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.1.0.tgz#69831fe5346532888f279102f39fc4452ebbe6c2"
-  integrity sha512-DiEwVPqsieUzZBNxQ2cxznmFzfg/AMgJUjYw5xl6rSmCxAQXECcbSdwcLM6Ds6T09+SBfSNCGPhYUoQ96P4h7A==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.1.1.tgz#2a42db4cfbb7e55433c28b6f75d8b796af9669cd"
+  integrity sha512-juf9stUEwUaILepraGOWIJTLwg48bUnBmRqd2ln2Os1sW987zeoj/hzhbvRB95oMuS2ZTpjULmdwHNX4rzZIZw==
   dependencies:
-    cliui "^7.0.4"
+    cliui "^8.0.1"
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
@@ -809,9 +818,9 @@ mkdirp@^0.5.3:
     minimist "^1.2.6"
 
 mkdirp@~3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.0.tgz#758101231418bda24435c0888a91d9bd91f1372d"
-  integrity sha512-7+JDnNsyCvZXoUJdkMR0oUE2AmAdsNXGTmRbiOjYIwQ6q+bL6NwrozGQdPcmYaNcrhH37F50HHBUzoaBV6FITQ==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.1.tgz#e44e4c5607fb279c168241713cc6e0fea9adcb50"
+  integrity sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==
 
 mocha@^5.2.0:
   version "5.2.0"
