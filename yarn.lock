@@ -83,9 +83,9 @@
   integrity sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==
 
 "@types/node@*", "@types/node@~20.4.0":
-  version "20.4.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.1.tgz#a6033a8718653c50ac4962977e14d0f984d9527d"
-  integrity sha512-JIzsAvJeA/5iY6Y/OxZbv1lUcc8dNSE77lb2gnBH+/PJ3lFR1Ccvgwl5JWnHAkNHcRsT0TbpVOsiMKZ1F/yyJg==
+  version "20.4.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.2.tgz#129cc9ae69f93824f92fac653eebfb4812ab4af9"
+  integrity sha512-Dd0BYtWgnWJKwO1jkmTrzofjK2QXXcai0dmtzvIBhcA+RsG5h8R3xlyta0kGOZRNfL9GuRtb1knmPEhQrePCEw==
 
 "@types/rimraf@~3.0.0":
   version "3.0.2"
@@ -822,9 +822,9 @@ minimist@^1.2.6:
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
 "minipass@^5.0.0 || ^6.0.2 || ^7.0.0":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.1.tgz#dff63464407cd8b83d7f008c0f116fa8c9b77ebf"
-  integrity sha512-NQ8MCKimInjVlaIqx51RKJJB7mINVkLTJbsZKmto4UAAOC/CWXES8PGaOgoBZyqoUsUA/U3DToGK7GJkkHbjJw==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.2.tgz#58a82b7d81c7010da5bd4b2c0c85ac4b4ec5131e"
+  integrity sha512-eL79dXrE1q9dBbDCLg7xfn/vl7MS4F1gvJAgjJrQli/jbQWdUttuVawphqpffoIYfRdq78LHx6GP4bU/EQ2ATA==
 
 mkdirp@0.5.1:
   version "0.5.1"
