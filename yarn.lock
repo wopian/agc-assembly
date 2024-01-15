@@ -765,9 +765,9 @@ log-symbols@4.1.0:
     is-unicode-supported "^0.1.0"
 
 loupe@^3.0.0:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/loupe/-/loupe-3.0.2.tgz#13435bc5a2751a4da74c0ec4841f56970a3387d5"
-  integrity sha512-Tzlkbynv7dtqxTROe54Il+J4e/zG2iehtJGZUYpTv8WzlkW9qyEcE83UhGJCeuF3SCfzHuM5VWhBi47phV3+AQ==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/loupe/-/loupe-3.1.0.tgz#46ef1a4ffee73145f5c0a627536d754787c1ea2a"
+  integrity sha512-qKl+FrLXUhFuHUoDJG7f8P8gEMHq9NFS0c6ghXG1J0rldmZFQZoNVv/vyirE9qwCIhWZDsvEFd1sbFu3GvRQFg==
   dependencies:
     get-func-name "^2.0.1"
 
