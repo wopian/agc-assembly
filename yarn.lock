@@ -218,10 +218,10 @@ chai-as-promised@~7.1.0:
   dependencies:
     check-error "^1.0.2"
 
-chai@~5.1.0:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/chai/-/chai-5.1.2.tgz#3afbc340b994ae3610ca519a6c70ace77ad4378d"
-  integrity sha512-aGtmf24DW6MLHHG5gCx4zaI3uBq3KRtxeVs0DjFH6Z0rDNbsvTxFASFvdj79pxjxZ8/5u3PIiN3IwEIQkiiuPw==
+chai@~5.3.0:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/chai/-/chai-5.3.3.tgz#dd3da955e270916a4bd3f625f4b919996ada7e06"
+  integrity sha512-4zNhdJD/iOjSH0A05ea+Ke6MU5mmpQcbQsSOkgdaUMJ9zTlDTD/GYlwohmIE2u0gaxHYiVHEn1Fw9mZ/ktJWgw==
   dependencies:
     assertion-error "^2.0.1"
     check-error "^2.1.1"
