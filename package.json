@@ -157,7 +157,7 @@
     "@types/mocha": "~10.0.0",
     "@types/node": "~22.10.0",
     "@types/rimraf": "~4.0.0",
-    "chai": "~5.1.0",
+    "chai": "~6.2.0",
     "chai-as-promised": "~7.1.0",
     "converter": "~0.0.5",
     "mkdirp": "~3.0.0",
